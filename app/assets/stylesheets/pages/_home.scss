@@ -1,1 +1,90 @@
 // Specific CSS for your home-page
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Poppins:wght@300&display=swap');
+
+body {
+  font-family: poppins, sans-serif;
+  margin: 0px;
+  --token-2840d062-261b-4eca-acdb-d7c218ee2723: rgb(43, 43, 49);
+  --token-f802f2d8-fcc4-4a31-b3ad-cbd3fcf04085: rgb(96, 125, 139);
+  --token-2840d062-261b-4eca-acdb-d7c218ee2723: rgb(43, 43, 49);
+
+}
+
+strong {
+  color: $gold;
+}
+
+section {
+  min-height: 100vh;
+}
+
+section#header {
+  background: radial-gradient(94% 58.3% at 50.3% 82.6%, var(--token-2840d062-261b-4eca-acdb-d7c218ee2723, #666572) 0%, var(--token-79f54f4b-5c08-4adb-84cd-68f4d833bf59, rgb(17, 16, 19)) 100%);
+  color: white;
+  min-height: 76vh;
+}
+
+article .buttons {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+}
+
+
+section#analiza{
+  background: $whity;
+  color: $blackletter;
+}
+
+section#modelo {
+  background: radial-gradient(75% 50% at 50% 44.9%, var(--token-f802f2d8-fcc4-4a31-b3ad-cbd3fcf04085, #607d8b) 0%, var(--token-79f54f4b-5c08-4adb-84cd-68f4d833bf59, rgb(17, 16, 19)) 100%);
+  color: white;
+}
+
+section#algoritmo {
+  background: radial-gradient(94% 92.9%at 100% 96.1%,var(--token-2840d062-261b-4eca-acdb-d7c218ee2723, #666572) 0%,var(--token-79f54f4b-5c08-4adb-84cd-68f4d833bf59, rgb(17, 16, 19)) 100%);
+  color: white;
+  display: flex;
+
+}
+
+article {
+  width: 90%;
+  max-width: 50%;
+  padding: 20px;
+  margin: 0px auto;
+}
+
+h1 {
+  font-size: 5em;
+}
+h2 {
+  text-align: center;
+  padding: 40px 0px 0px 0px;
+  font-size: 4em;
+}
+
+p {
+  font-size: 3em;
+  text-align: center;
+}
+
+
+@media
+(prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 11px;
+  }
+}

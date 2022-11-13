@@ -3,6 +3,8 @@
   <head>
     <title>Anfin</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="icon" href="https://framerusercontent.com/sites/icons/default-favicon.v3.png">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -11,6 +13,12 @@
   </head>
 
   <body>
+
+    <%= render "shared/navbar" %>
+
     <%= yield %>
+
+      <%= render "shared/footer" %>
+
   </body>
 </html>
