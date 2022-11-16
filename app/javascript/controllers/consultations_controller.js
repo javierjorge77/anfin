@@ -9,7 +9,7 @@ export default class extends Controller {
       method: "GET",
       headers: {
         accept: "aplication/json",
-        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NjAsImZpcnN0TmFtZSI6Ikp1YW4gUGVkcm8iLCJyb2xlSWQiOjIsImNvcnBvcmF0aW9uSWQiOjY5fQ.-dQREkAvQE04-kpjdyMplR4BnrLabrm9pbNVkcT122A"
+        "Authorization": "Bearer ${ENV['API_BEARER']}"
       }
     })
     .then(response => response.json())
