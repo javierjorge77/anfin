@@ -17,27 +17,9 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_16_023135) do
   create_table "consultations", force: :cascade do |t|
     t.string "rut"
     t.string "nombre"
-    t.string "laboral"
-    t.string "civil"
-    t.string "cobranza"
-    t.string "otras"
-    t.string "estado"
-    t.string "estadoCausa"
-    t.string "etapa"
-    t.string "fechaIngreso"
-    t.string "link"
-    t.string "linkPdf"
-    t.string "linkEbook"
-    t.string "litigantes"
-    t.string "rutLitigante"
-    t.string "sujetoLitigante"
-    t.string "personaLitigante"
-    t.string "proc"
-    t.string "rol"
-    t.string "tribunal"
+    t.bigint "user_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.bigint "user_id", null: false
     t.index ["user_id"], name: "index_consultations_on_user_id"
   end
 

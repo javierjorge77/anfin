@@ -16,19 +16,18 @@ class ConsultationsController < ApplicationController
   end
 
   def index
-
-
+    @consultations= Consultation.all
   end
 
   def show
-
+    @consultation= Consultation.find(params[:id])
   end
 
 
   private
 
   def consultation_params
-    params.require(:consultation).permit(:rut)
+    params.require(:consultation).permit(:rut, :id)
   end
 
 end
