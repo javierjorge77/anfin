@@ -3,8 +3,12 @@
     <h1>Análisis Legal en <strong>un click</strong></h1>
     <h3>Te entregamos el background check <strong>mas completo</strong> del mercado, dandote una poderosa herramienta para evitar riesgos laborales, <strong>explicado</strong> de manera <span>sencilla</span></h3>
     <div class="buttons">
-      <input type="button" class="btn-alert"  value= "Haz una consulta">
-      <input type="button" class="btn-soft"  value= "Registrate">
+
+      <% unless user_signed_in? %>
+      <%= link_to "Registrate", new_user_registration_path, class: "btn-alert" %>
+      <% end %>
+      <%= link_to "Haz una consulta", "/", class: "btn-soft" %>
+
     </div>
   </article>
 </section>

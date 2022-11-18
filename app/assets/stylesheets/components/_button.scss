@@ -5,6 +5,8 @@
   border-radius: 10px;
   box-shadow: rgb(0,0,0 / 5%) 0px 4px 8px 0px;
   height: 55px;
+  margin: 10px;
+
 }
 
 .btn-alert:hover {
@@ -18,8 +20,51 @@ opacity: 0.5;
     opacity: 1;
     border-radius: 10px;
     height: 55px;
+    margin: 10px;
 }
 
 .btn-soft:hover {
   opacity: 0.5;
+  }
+
+
+  .btn-log {
+    background-color: rgb(255, 160, 0);
+    filter: none;
+    opacity: 1;
+    border-radius: 30px;
+    box-shadow: rgb(0,0,0 / 5%) 0px 4px 8px 0px;
+    height: 10%;
+    width: 20%;
+    text-align: center;
+    margin-bottom: 32px;
+
+  }
+
+  .btn-log:hover {
+  opacity: 0.5;
+  }
+
+.buttons a {
+text-align: center;
+text-decoration: none;
+display: flex;
+justify-content: center;
+flex-direction: column;
+color: black;
+
+}
+
+#links {
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: black;
+  font-weight: bolder;
+  }
+
+  .buttons input {
+    font-weight: bolder;
   }
