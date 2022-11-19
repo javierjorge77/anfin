@@ -11,8 +11,17 @@ class ConsultationsController < ApplicationController
   end
 
   def create
-    @consultation = Consultation.new(consultation_params)
-    @consultation.user = current_user
+    conn = Faraday.new(
+      url: 'https://api.sheriffqa.keiron.cl',
+      headers: {   accept: "aplication/json",
+        Authorization: ENV["KEY"]}
+    )
+
+    response = conn.get('/api/v1/integration/helper/judicial/12470886-9')
+    data = JSON.parse(response.body)
+      if data["success"]
+        @consultation = Consultation.create(rut: "#{data["rut"]}", nombre: "Juan Camaney", user_id: current_user.id, created_at: Date.today, updated_at: Date.today )
+
   end
 
   def index
