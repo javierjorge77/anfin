@@ -11,7 +11,7 @@ user1= User.create(id: 1, email: "javierjorge77@gmail.com", password: "123456", 
 consulta1 = Consultation.create(rut: "12470886-9", nombre: "Juan Camaney", user_id: 1, created_at: Date.today, updated_at: Date.today )
 
 
-demanda1= Consultation.Demanda.create(tipo: "civil",
+demanda1= Demanda.create(tipo: "civil",
   estado: "Tramitación ",
   estadoCausa: "Sin archivar",
   etapa: "1 Verificación de créditos",
@@ -22,10 +22,10 @@ demanda1= Consultation.Demanda.create(tipo: "civil",
   proc: "Concursal de Liquidación Voluntaria - Empresa Deudora",
   rol: "C-10745-2017",
   tribunal: "4º Juzgado Civil de San Miguel",
-  consultation_id: 1,
+  consultation_id: 1
 )
 
-demanda2= Consultation.Demanda.create(tipo: "civil",
+demanda2= Demanda.create(tipo: "civil",
   estado: "Concluido ",
   estadoCausa: "Archivada",
   etapa: "15 Terminada ",
@@ -36,10 +36,6 @@ demanda2= Consultation.Demanda.create(tipo: "civil",
   proc: "Gestión Preparatoria (Citac.Conf.Deuda)",
   rol: "C-80932-2011",
   tribunal: "4º Juzgado Civil de San Miguel",
-  consultation_id: 1,
+  consultation_id: 1
 
 )
-
-puts consulta1.rut
-puts demanda1.etapa
-puts Demanda.all
