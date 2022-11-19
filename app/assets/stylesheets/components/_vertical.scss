@@ -1,0 +1,26 @@
+
+.vertical ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #2B2B31;
+  height: 700px;
+  text-align: center;
+}
+.vertical li a {
+  display: block;
+  color: $gold;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color on hover */
+.vertical li a:hover {
+  background-color: #4e4e4e;
+  color: $whity;
+}
+
+.vertical #spacer {
+  height: 50px;
+}

@@ -1,0 +1,12 @@
+<div id="display">
+  <div class="vertical">
+    <%= render "shared/vertical" %>
+  </div>
+
+  <div class="container">
+    <h1> <%= @consultation.nombre  %> </h1>
+    <h3><%= link_to @consultation.rut, consultation_path(@consultation) %></h3>
+
+  </div>
+
+</div>
