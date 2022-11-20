@@ -21,7 +21,7 @@ class ConsultationsController < ApplicationController
     data = JSON.parse(response.body)
       if data["success"]
         @consultation = Consultation.create(rut: "#{data["rut"]}", nombre: "Juan Camaney", user_id: current_user.id, created_at: Date.today, updated_at: Date.today )
-
+      end
   end
 
   def index
@@ -29,7 +29,7 @@ class ConsultationsController < ApplicationController
   end
 
   def show
-    @consultation= Consultation.find(params[:id])
+    @demandas= Demanda.all
   end
 
 
