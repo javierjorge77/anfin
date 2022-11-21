@@ -13,8 +13,6 @@ class ConsultationsController < ApplicationController
 
 
   def create
-    @consultation= Consultation.new
-    @demanda= Demanda.new
     conn = Faraday.new(
       url: 'https://api.sheriffqa.keiron.cl',
       headers: {   accept: "aplication/json",
