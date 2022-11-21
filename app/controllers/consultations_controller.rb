@@ -71,11 +71,11 @@ class ConsultationsController < ApplicationController
         tribunal: "#{data["cobranza"]["tribunal"]}",
         consultation_id: @consultation.id
     )
-  end
-
-
     end
+
+
   end
+end
 
   def index
     @consultations= Consultation.all
