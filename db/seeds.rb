@@ -10,6 +10,7 @@ user1= User.create(id: 1, email: "javierjorge77@gmail.com", password: "123456", 
 
 consulta1 = Consultation.create(rut: "12470886-9", nombre: "Juan Camaney", user_id: 1, created_at: Date.today, updated_at: Date.today )
 
+
 demanda1= Demanda.create!(tipo: "civil",
   estado: "Tramitación ",
   estadoCausa: "Sin archivar",
@@ -21,7 +22,7 @@ demanda1= Demanda.create!(tipo: "civil",
   proc: "Concursal de Liquidación Voluntaria - Empresa Deudora",
   rol: "C-10745-2017",
   tribunal: "4º Juzgado Civil de San Miguel",
-  consultation_id: 1,
+  consultation_id: 1
 )
 
 demanda2= Demanda.create!(tipo: "laboral",
@@ -35,10 +36,9 @@ demanda2= Demanda.create!(tipo: "laboral",
   proc: "Gestión Preparatoria (Citac.Conf.Deuda)",
   rol: "C-80932-2011",
   tribunal: "4º Juzgado Civil de San Miguel",
-  consultation_id: 1,
+  consultation_id: 1
 
 )
-
 
 demanda3= Demanda.create!(tipo: "cobranza",
   estado: "Tramitación ",
@@ -54,3 +54,4 @@ demanda3= Demanda.create!(tipo: "cobranza",
   consultation_id: 1,
 
 )
+

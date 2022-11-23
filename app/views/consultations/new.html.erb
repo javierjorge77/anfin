@@ -1,8 +1,6 @@
 
-
-<div class="consultation_container" data-controller="consultations" >
-  <%= simple_form_for(@consultation, data: {consultations_target: "form", action: "submit->consultations#requestRut"} ) do |f| %>
-    <%= f.input :key, :as => :hidden, :input_html => { :value => ENV["KEY"], data: { consultations_target: "apiKey"}}  %>
+<div >
+  <%= simple_form_for(@consultation,url: consultations_path, method: :post) do |f| %>
     <%= f.input :rut %>
     <%= f.button :submit %>
   <% end %>
