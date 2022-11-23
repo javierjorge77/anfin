@@ -39,3 +39,19 @@ demanda2= Demanda.create!(tipo: "laboral",
   consultation_id: 1
 
 )
+
+demanda3= Demanda.create!(tipo: "cobranza",
+  estado: "Tramitación ",
+  estadoCausa: "Archivada",
+  etapa: "1 Terminada ",
+  fechaingreso: "2019-05-30T00:00:00.000Z",
+  link: "https://civil.pjud.cl/CIVILPORWEB/ConsultaDetalleAtPublicoAccion.do?TIP_Consulta=1&TIP_Cuaderno=49&CRR_IdCuaderno=29721142&ROL_Causa=17908&TIP_Causa=C&ERA_Causa=2019&CRR_IdCausa=23632078&COD_Tribunal=264&TIP_Informe=1&",
+  linkPdf: nil,
+  LinkEbook: nil,
+  proc: "Gestión Preparatoria (Citac.Conf.Deuda)",
+  rol: "C-17908-2019",
+  tribunal: "6º Juzgado Civil de Santiago",
+  consultation_id: 1,
+
+)
+

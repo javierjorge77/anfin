@@ -21,6 +21,7 @@ class ConsultationsController < ApplicationController
     response = conn.get("/api/v1/integration/helper/judicial/#{consultation_params[:rut]}")
     data = JSON.parse(response.body)
       if data["success"]
+
         @consultation = Consultation.create(rut: "#{data["rut"]}", nombre: "pruebaq 1", user_id: current_user)
         @demanda.each do |demanda|
           demanda = Demanda.create(
@@ -72,6 +73,7 @@ class ConsultationsController < ApplicationController
         consultation_id: @consultation.id
     )
     end
+
 
 
   end
