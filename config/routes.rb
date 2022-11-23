@@ -8,5 +8,6 @@ Rails.application.routes.draw do
   # root "articles#index"
 
   resources :consultations, only:[:new,:create, :index, :show]
+  resources :contactos, only:[:new, :create]
 
 end

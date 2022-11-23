@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_11_23_014902) do
+ActiveRecord::Schema[7.0].define(version: 2022_11_23_024821) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -21,6 +21,14 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_23_014902) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["user_id"], name: "index_consultations_on_user_id"
+  end
+
+  create_table "contactos", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "name"
+    t.string "email"
+    t.string "text"
   end
 
   create_table "demandas", force: :cascade do |t|
@@ -42,14 +50,8 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_23_014902) do
   end
 
   create_table "litigantes", force: :cascade do |t|
-    t.string "rut"
-    t.string "nombre"
-    t.string "sujeto"
-    t.string "persona"
-    t.bigint "demanda_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["demanda_id"], name: "index_litigantes_on_demanda_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -72,5 +74,4 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_23_014902) do
 
   add_foreign_key "consultations", "users"
   add_foreign_key "demandas", "consultations"
-  add_foreign_key "litigantes", "demandas"
 end
