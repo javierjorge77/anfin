@@ -11,7 +11,7 @@ user1= User.create(id: 1, email: "javierjorge77@gmail.com", password: "123456", 
 consulta1 = Consultation.create(rut: "12470886-9", nombre: "Juan Camaney", user_id: 1, created_at: Date.today, updated_at: Date.today )
 
 
-demanda1= Demanda.create(tipo: "civil",
+demanda1= Demanda.create!(tipo: "civil",
   estado: "Tramitación ",
   estadoCausa: "Sin archivar",
   etapa: "1 Verificación de créditos",
@@ -25,7 +25,7 @@ demanda1= Demanda.create(tipo: "civil",
   consultation_id: 1
 )
 
-demanda2= Demanda.create(tipo: "civil",
+demanda2= Demanda.create!(tipo: "laboral",
   estado: "Concluido ",
   estadoCausa: "Archivada",
   etapa: "15 Terminada ",

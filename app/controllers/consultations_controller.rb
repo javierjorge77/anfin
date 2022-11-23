@@ -82,7 +82,7 @@ end
   end
 
   def show
-    @consultation= Consultation.find(params[:id])
+    @demandas= Demanda.all
   end
 
 
