@@ -8,75 +8,98 @@ class ConsultationsController < ApplicationController
 
   def new
    @consultation= Consultation.new
-   @demanda= Demanda.new
   end
 
-
   def create
+
     conn = Faraday.new(
       url: 'https://api.sheriffqa.keiron.cl',
       headers: {   accept: "aplication/json",
         Authorization: ENV["KEY"]}
     )
-    response = conn.get("/api/v1/integration/helper/judicial/#{consultation_params[:rut]}")
-    data = JSON.parse(response.body)
-      if data["success"]
 
-        @consultation = Consultation.create(rut: "#{data["rut"]}", nombre: "pruebaq 1", user_id: current_user)
-        @demanda.each do |demanda|
-          demanda = Demanda.create(
+    response = conn.get('/api/v1/integration/helper/judicial/12470886-9')
+    data = JSON.parse(response.body)
+    if data["success"]
+      @consultation = Consultation.create(rut: "#{data["rut"]}", nombre: "pruebaq 1", user_id: current_user)
+        data["civil"].each do |civil|
+        @demanda = Demanda.create(
+            consultation: @consultation.id,
             tipo: "civil",
-            estado: "#{data["civil"]["estado"]}",
-            estadoCausa: "#{data["civil"]["estadoCausa"]}",
-            etapa: "#{data["civil"]["etapa"]}",
-            fechaingreso:  "#{data["civil"]["fechaingreso"]}",
-            link: "#{data["civil"]["link"]}",
-            linkPdf:  "#{data["civil"]["linkPdf"]}",
-            LinkEbook:"#{data["civil"]["linkEbook"]}",
-            proc: "#{data["civil"]["proc"]}",
-            rol: "#{data["civil"]["rol"]}",
-            tribunal: "#{data["civil"]["tribunal"]}",
+            estado: "#{civil["estado"]}",
+            estadoCausa: "#{civil["estadoCausa"]}",
+            etapa: "#{civil["etapa"]}",
+            fechaingreso:  "#{civil["fechaingreso"]}",
+            link: "#{civil["link"]}",
+            linkPdf:  "#{civil["linkPdf"]}",
+            LinkEbook:"#{civil["linkEbook"]}",
+            proc: "#{civil["proc"]}",
+            rol: "#{civil["rol"]}",
+            tribunal: "#{civil["tribunal"]}"
+          )
+          civil["litigante"].each do |litigante|
+            @litigante = Litigante.create(
+              demanda: @demanda,
+              rut: "#{litigante["rut"]}",
+              nombre: "#{litigante["nombre"]}",
+              sujeto: "#{litigante["sujeto"]}",
+              persona: "#{litigante["persona:"]}"
+            )
+          end
+        end
+
+          data["laboral"].each do |demanda|
+            demanda = Demanda.create(
+              consultation_id: @consultation.id,
+              tipo: "laboral",
+              estado: "#{data["laboral"]["estado"]}",
+              estadoCausa: "#{data["laboral"]["estadoCausa"]}",
+              etapa: "#{data["laboral"]["etapa"]}",
+              fechaingreso:  "#{data["laboral"]["fechaingreso"]}",
+              link: "#{data["laboral"]["link"]}",
+              linkPdf:  "#{data["laboral"]["linkPdf"]}",
+              LinkEbook:"#{data["laboral"]["linkEbook"]}",
+              proc: "#{data["laboral"]["proc"]}",
+              rol: "#{data["laboral"]["rol"]}",
+              tribunal: "#{data["laboral"]["tribunal"]}"
+          )
+            laboral["litigante"].each do |litigante|
+              @litigante = Litigante.create(
+                demanda: @demanda,
+                rut: "#{litigante["rut"]}",
+                nombre: "#{litigante["nombre"]}",
+                sujeto: "#{litigante["sujeto"]}",
+                persona: "#{litigante["persona:"]}"
+              )
+            end
+        end
+
+        data["cobranza"] do |demanda|
+          demanda = Demanda.create(
+            tipo: "cobranza",
+            estado: "#{data["cobranza"]["estado"]}",
+            estadoCausa: "#{data["cobranza"]["estadoCausa"]}",
+            etapa: "#{data["cobranza"]["etapa"]}",
+            fechaingreso:  "#{data["cobranza"]["fechaingreso"]}",
+            link: "#{data["cobranza"]["link"]}",
+            linkPdf:  "#{data["cobranza"]["linkPdf"]}",
+            LinkEbook:"#{data["cobranza"]["linkEbook"]}",
+            proc: "#{data["cobranza"]["proc"]}",
+            rol: "#{data["cobranza"]["rol"]}",
+            tribunal: "#{data["cobranza"]["tribunal"]}",
             consultation_id: @consultation.id
         )
+        cobranza["litigante"].each do |litigante|
+          @litigante = Litigante.create(
+            demanda: @demanda,
+            rut: "#{litigante["rut"]}",
+            nombre: "#{litigante["nombre"]}",
+            sujeto: "#{litigante["sujeto"]}",
+            persona: "#{litigante["persona:"]}"
+          )
+        end
       end
-
-      @demanda.each do |demanda|
-        demanda = Demanda.create(
-          tipo: "laboral",
-          estado: "#{data["laboral"]["estado"]}",
-          estadoCausa: "#{data["laboral"]["estadoCausa"]}",
-          etapa: "#{data["laboral"]["etapa"]}",
-          fechaingreso:  "#{data["laboral"]["fechaingreso"]}",
-          link: "#{data["laboral"]["link"]}",
-          linkPdf:  "#{data["laboral"]["linkPdf"]}",
-          LinkEbook:"#{data["laboral"]["linkEbook"]}",
-          proc: "#{data["laboral"]["proc"]}",
-          rol: "#{data["laboral"]["rol"]}",
-          tribunal: "#{data["laboral"]["tribunal"]}",
-          consultation_id: @consultation.id
-      )
-    end
-
-    @demanda.each do |demanda|
-      demanda = Demanda.create(
-        tipo: "cobranza",
-        estado: "#{data["cobranza"]["estado"]}",
-        estadoCausa: "#{data["cobranza"]["estadoCausa"]}",
-        etapa: "#{data["cobranza"]["etapa"]}",
-        fechaingreso:  "#{data["cobranza"]["fechaingreso"]}",
-        link: "#{data["cobranza"]["link"]}",
-        linkPdf:  "#{data["cobranza"]["linkPdf"]}",
-        LinkEbook:"#{data["cobranza"]["linkEbook"]}",
-        proc: "#{data["cobranza"]["proc"]}",
-        rol: "#{data["cobranza"]["rol"]}",
-        tribunal: "#{data["cobranza"]["tribunal"]}",
-        consultation_id: @consultation.id
-    )
-    end
-
-
-
-  end
+   end
 end
 
   def index
