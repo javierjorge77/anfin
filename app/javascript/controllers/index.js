@@ -9,3 +9,6 @@ application.register("consultations", ConsultationsController)
 
 import HelloController from "./hello_controller"
 application.register("hello", HelloController)
+
+import TextController from "./text_controller"
+application.register("text", TextController)
