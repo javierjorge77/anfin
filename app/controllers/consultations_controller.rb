@@ -18,13 +18,13 @@ class ConsultationsController < ApplicationController
         Authorization: ENV["KEY"]}
     )
 
-    response = conn.get('/api/v1/integration/helper/judicial/12470886-9')
+    response = conn.get("/api/v1/integration/helper/judicial/#{consultation_params[:rut]}")
     data = JSON.parse(response.body)
     if data["success"]
-      @consultation = Consultation.create(rut: "#{data["rut"]}", nombre: "pruebaq 1", user_id: current_user)
-        data["civil"].each do |civil|
+      @consultation = Consultation.create(rut: "#{data["data"]["rut"]}", nombre: "pruebaq 1", user: current_user)
+        data["data"]["civil"].each do |civil|
         @demanda = Demanda.create(
-            consultation: @consultation.id,
+            consultation: @consultation,
             tipo: "civil",
             estado: "#{civil["estado"]}",
             estadoCausa: "#{civil["estadoCausa"]}",
@@ -37,7 +37,7 @@ class ConsultationsController < ApplicationController
             rol: "#{civil["rol"]}",
             tribunal: "#{civil["tribunal"]}"
           )
-          civil["litigante"].each do |litigante|
+          civil["litigantes"].each do |litigante|
             @litigante = Litigante.create(
               demanda: @demanda,
               rut: "#{litigante["rut"]}",
@@ -48,22 +48,22 @@ class ConsultationsController < ApplicationController
           end
         end
 
-          data["laboral"].each do |demanda|
+          data["data"]["laboral"].each do |laboral|
             demanda = Demanda.create(
-              consultation_id: @consultation.id,
+              consultation: @consultation,
               tipo: "laboral",
-              estado: "#{data["laboral"]["estado"]}",
-              estadoCausa: "#{data["laboral"]["estadoCausa"]}",
-              etapa: "#{data["laboral"]["etapa"]}",
-              fechaingreso:  "#{data["laboral"]["fechaingreso"]}",
-              link: "#{data["laboral"]["link"]}",
-              linkPdf:  "#{data["laboral"]["linkPdf"]}",
-              LinkEbook:"#{data["laboral"]["linkEbook"]}",
-              proc: "#{data["laboral"]["proc"]}",
-              rol: "#{data["laboral"]["rol"]}",
-              tribunal: "#{data["laboral"]["tribunal"]}"
+              estado: "#{laboral["estado"]}",
+              estadoCausa: "#{laboral["estadoCausa"]}",
+              etapa: "#{laboral["etapa"]}",
+              fechaingreso:  "#{laboral["fechaingreso"]}",
+              link: "#{laboral["link"]}",
+              linkPdf:  "#{laboral["linkPdf"]}",
+              LinkEbook:"#{laboral["linkEbook"]}",
+              proc: "#{laboral["proc"]}",
+              rol: "#{laboral["rol"]}",
+              tribunal: "#{laboral["tribunal"]}"
           )
-            laboral["litigante"].each do |litigante|
+            laboral["litigantes"].each do |litigante|
               @litigante = Litigante.create(
                 demanda: @demanda,
                 rut: "#{litigante["rut"]}",
@@ -74,22 +74,23 @@ class ConsultationsController < ApplicationController
             end
         end
 
-        data["cobranza"] do |demanda|
+        data["data"]["cobranza"].each do |cobranza|
           demanda = Demanda.create(
+            consultation: @consultation,
             tipo: "cobranza",
-            estado: "#{data["cobranza"]["estado"]}",
-            estadoCausa: "#{data["cobranza"]["estadoCausa"]}",
-            etapa: "#{data["cobranza"]["etapa"]}",
-            fechaingreso:  "#{data["cobranza"]["fechaingreso"]}",
-            link: "#{data["cobranza"]["link"]}",
-            linkPdf:  "#{data["cobranza"]["linkPdf"]}",
-            LinkEbook:"#{data["cobranza"]["linkEbook"]}",
-            proc: "#{data["cobranza"]["proc"]}",
-            rol: "#{data["cobranza"]["rol"]}",
-            tribunal: "#{data["cobranza"]["tribunal"]}",
-            consultation_id: @consultation.id
+            estado: "#{cobranza["estado"]}",
+            estadoCausa: "#{cobranza["estadoCausa"]}",
+            etapa: "#{cobranza["etapa"]}",
+            fechaingreso:  "#{cobranza["fechaingreso"]}",
+            link: "#{cobranza["link"]}",
+            linkPdf:  "#{cobranza["linkPdf"]}",
+            LinkEbook:"#{cobranza["linkEbook"]}",
+            proc: "#{cobranza["proc"]}",
+            rol: "#{cobranza["rol"]}",
+            tribunal: "#{cobranza["tribunal"]}"
+
         )
-        cobranza["litigante"].each do |litigante|
+        cobranza["litigantes"].each do |litigante|
           @litigante = Litigante.create(
             demanda: @demanda,
             rut: "#{litigante["rut"]}",
