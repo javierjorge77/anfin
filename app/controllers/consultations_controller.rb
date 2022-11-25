@@ -101,14 +101,20 @@ class ConsultationsController < ApplicationController
         end
       end
    end
+
+    redirect_to consultations_path
+
 end
 
   def index
-    @consultations= Consultation.all
+    @user= current_user
+    @consultations= @user.consultation
   end
 
   def show
-    @demandas= Demanda.all
+    @consultation= Consultation.find(params[:id])
+    @demandas = @consultation.demandas
+
   end
 
 
