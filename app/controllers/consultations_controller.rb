@@ -7,17 +7,20 @@ require "http"
 class ConsultationsController < ApplicationController
 
   before_action :set_consultation, only: %i[ show new create ]
-
+  
   def index
-
+    @user= current_user
     @consultations= policy_scope(Consultation).all
+    @consultations= @user.consultation
   end
 
   def show
-    authorize @consultation
-    @demandas= Demanda.all
-  end
+   authorize @consultation
+    @consultation= Consultation.find(params[:id])
+    @demandas = @consultation.demandas
 
+  end
+  
   def new
     @consultation= Consultation.new
     authorize @consultation
@@ -31,9 +34,7 @@ class ConsultationsController < ApplicationController
         Authorization: ENV["KEY"]}
     )
 
-    response = conn.get('/api/v1/integration/helper/judicial/12470886-9')
-
-
+    response = conn.get("/api/v1/integration/helper/judicial/#{consultation_params[:rut]}")
     data = JSON.parse(response.body)
     if data["success"]
       @consultation = Consultation.create(rut: "#{data["data"]["rut"]}", nombre: "pruebaq 1", user: current_user)
@@ -63,20 +64,20 @@ class ConsultationsController < ApplicationController
           end
         end
 
-          data["data"]["laboral"].each do |demanda|
+          data["data"]["laboral"].each do |laboral|
             demanda = Demanda.create(
               consultation: @consultation,
               tipo: "laboral",
-              estado: "#{data["laboral"]["estado"]}",
-              estadoCausa: "#{data["laboral"]["estadoCausa"]}",
-              etapa: "#{data["laboral"]["etapa"]}",
-              fechaingreso:  "#{data["laboral"]["fechaingreso"]}",
-              link: "#{data["laboral"]["link"]}",
-              linkPdf:  "#{data["laboral"]["linkPdf"]}",
-              LinkEbook:"#{data["laboral"]["linkEbook"]}",
-              proc: "#{data["laboral"]["proc"]}",
-              rol: "#{data["laboral"]["rol"]}",
-              tribunal: "#{data["laboral"]["tribunal"]}"
+              estado: "#{laboral["estado"]}",
+              estadoCausa: "#{laboral["estadoCausa"]}",
+              etapa: "#{laboral["etapa"]}",
+              fechaingreso:  "#{laboral["fechaingreso"]}",
+              link: "#{laboral["link"]}",
+              linkPdf:  "#{laboral["linkPdf"]}",
+              LinkEbook:"#{laboral["linkEbook"]}",
+              proc: "#{laboral["proc"]}",
+              rol: "#{laboral["rol"]}",
+              tribunal: "#{laboral["tribunal"]}"
           )
             laboral["litigantes"].each do |litigante|
               @litigante = Litigante.create(
@@ -89,20 +90,21 @@ class ConsultationsController < ApplicationController
             end
         end
 
-        data["data"]["cobranza"] do |demanda|
+        data["data"]["cobranza"].each do |cobranza|
           demanda = Demanda.create(
+            consultation: @consultation,
             tipo: "cobranza",
-            estado: "#{data["cobranza"]["estado"]}",
-            estadoCausa: "#{data["cobranza"]["estadoCausa"]}",
-            etapa: "#{data["cobranza"]["etapa"]}",
-            fechaingreso:  "#{data["cobranza"]["fechaingreso"]}",
-            link: "#{data["cobranza"]["link"]}",
-            linkPdf:  "#{data["cobranza"]["linkPdf"]}",
-            LinkEbook:"#{data["cobranza"]["linkEbook"]}",
-            proc: "#{data["cobranza"]["proc"]}",
-            rol: "#{data["cobranza"]["rol"]}",
-            tribunal: "#{data["cobranza"]["tribunal"]}",
-            consultation: @consultation
+            estado: "#{cobranza["estado"]}",
+            estadoCausa: "#{cobranza["estadoCausa"]}",
+            etapa: "#{cobranza["etapa"]}",
+            fechaingreso:  "#{cobranza["fechaingreso"]}",
+            link: "#{cobranza["link"]}",
+            linkPdf:  "#{cobranza["linkPdf"]}",
+            LinkEbook:"#{cobranza["linkEbook"]}",
+            proc: "#{cobranza["proc"]}",
+            rol: "#{cobranza["rol"]}",
+            tribunal: "#{cobranza["tribunal"]}"
+
         )
         cobranza["litigantes"].each do |litigante|
           @litigante = Litigante.create(
@@ -115,8 +117,10 @@ class ConsultationsController < ApplicationController
         end
       end
    end
-end
 
+    redirect_to consultations_path
+
+end
 
 
 
