@@ -6,12 +6,28 @@ require "http"
 
 class ConsultationsController < ApplicationController
 
+  before_action :set_consultation, only: %i[ show new create ]
+  
+  def index
+    @user= current_user
+    @consultations= policy_scope(Consultation).all
+    @consultations= @user.consultation
+  end
+
+  def show
+   authorize @consultation
+    @consultation= Consultation.find(params[:id])
+    @demandas = @consultation.demandas
+
+  end
+  
   def new
-   @consultation= Consultation.new
+    @consultation= Consultation.new
+    authorize @consultation
   end
 
   def create
-
+    authorize @consultation
     conn = Faraday.new(
       url: 'https://api.sheriffqa.keiron.cl',
       headers: {   accept: "aplication/json",
@@ -106,16 +122,6 @@ class ConsultationsController < ApplicationController
 
 end
 
-  def index
-    @user= current_user
-    @consultations= @user.consultation
-  end
-
-  def show
-    @consultation= Consultation.find(params[:id])
-    @demandas = @consultation.demandas
-
-  end
 
 
   private
@@ -124,4 +130,7 @@ end
     params.require(:consultation).permit(:rut, :id)
   end
 
+  def set_consultation
+    @consultation = Consultation.new
+  end
 end
