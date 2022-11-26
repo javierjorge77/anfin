@@ -2,8 +2,8 @@ class ConsultationPolicy < ApplicationPolicy
   class Scope < Scope
     # NOTE: Be explicit about which records you allow access to!
     def resolve
-       scope.where(user_id: user.id )
-     end
+      scope.all
+    end
   end
 
   def index?
@@ -11,7 +11,7 @@ class ConsultationPolicy < ApplicationPolicy
   end
 
   def show?
-    return true
+    return true if user.id == record.user.id
   end
 
   def create?
@@ -21,6 +21,4 @@ class ConsultationPolicy < ApplicationPolicy
   def new?
     create?
   end
-
-
 end
