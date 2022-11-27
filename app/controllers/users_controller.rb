@@ -4,9 +4,12 @@ class UsersController < ApplicationController
   end
 
   def new
+
   end
 
   def create
+    #  @user= User.create(params[:user])
+    #  raise
   end
 
   def edit
@@ -14,5 +17,11 @@ class UsersController < ApplicationController
 
   def update
   end
+
+  # private
+
+  # def consultation_params
+  #   params.require(:user).permit(:username, :email, :password)
+  # end
 
 end
