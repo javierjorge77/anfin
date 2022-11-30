@@ -7,20 +7,21 @@ require "http"
 class ConsultationsController < ApplicationController
 
   before_action :set_consultation, only: %i[ show new create ]
-  
+
   def index
     @user= current_user
     @consultations= policy_scope(Consultation).all
     @consultations= @user.consultation
+    @consultation= Consultation.new
   end
 
   def show
-   authorize @consultation
+    authorize @consultation
     @consultation= Consultation.find(params[:id])
     @demandas = @consultation.demandas
-
+    @consultation= Consultation.new
   end
-  
+
   def new
     @consultation= Consultation.new
     authorize @consultation
