@@ -9,5 +9,6 @@ ActiveAdmin.register Consultation do
 
   # Filters:
   filter :user_id, as: :select, collection: proc { User.all }
+  filter :created_at
 
 end
