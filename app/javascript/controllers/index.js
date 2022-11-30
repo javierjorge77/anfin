@@ -12,3 +12,10 @@ application.register("hello", HelloController)
 
 import TextController from "./text_controller"
 application.register("text", TextController)
+
+
+import { Application } from '@hotwired/stimulus'
+import ScrollReveal from 'stimulus-scroll-reveal'
+
+const application2 = Application.start()
+application2.register('scroll-reveal', ScrollReveal)
