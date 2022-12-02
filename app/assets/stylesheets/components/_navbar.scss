@@ -28,7 +28,7 @@
   }
 
   .navbar-brand #an{
-    color: white;
+    color: #607D8B;
     }
 
 
@@ -36,11 +36,12 @@
     color: $gold;
     }
 
-  .navbar-brand #fin:hover{
-    color:  white;
-    }
-
 
 .container-fluid #filter {
   display: flex-end;
+}
+
+.nabvbar-jp {
+  justify-content: center;
+  align-items: center;
 }

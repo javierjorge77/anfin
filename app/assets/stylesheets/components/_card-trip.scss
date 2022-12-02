@@ -1,14 +1,14 @@
 .card-trip {
+  margin-top: 10px;
   overflow: hidden;
   background: white;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  border-radius: 2px;
+  height: 48px;
+  border: 16px;
+  border-radius: 8px;
 }
 
-.card-trip > img {
-  height: 200px;
-  width: 100%;
-  object-fit: cover;
-}
 
 .card-trip h2 {
   font-size: 16px;
@@ -22,18 +22,18 @@
   margin: 0;
 }
 
+.show-consultas{
+  margin-left: 24px;
+  width: 1800px;
+  font-family:sans-serif;
+}
 
 .card-trip .card-trip-infos {
-  padding: 16px;
+
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
   position: relative;
-}
-
-.card-trip-infos .card-trip-user {
-  position: absolute;
-  right: 16px;
-  top: -20px;
-  width: 40px;
+  border-radius: 2px;
+  height: 48px;
 }
