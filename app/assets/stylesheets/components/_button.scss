@@ -6,9 +6,10 @@
   box-shadow: rgb(0,0,0 / 5%) 0px 4px 8px 0px;
   height: 44px;
   margin: 10px;
-  width: 150px;
+  width: 220px;
   font-weight: bolder;
   font-family: 'DM Sans', sans-serif;
+  font-size: 24px;
 }
 
 .btn-alert:hover {
@@ -16,16 +17,18 @@ opacity: 0.5;
 }
 
 .btn-soft {
-    background-color: rgb(255, 236, 179);
+    background-color: #FFC107;
     box-shadow: rgb(0,0,0 / 5%) 0px 4px 8px 0px;
     filter: none;
     opacity: 1;
     border-radius: 10px;
     height: 45px;
     margin: 10px;
-    width: 150px;
+    width: 220px;
     font-weight: bolder;
 font-family: 'DM Sans', sans-serif;
+color: rgb(228, 228, 228);
+font-size: 24px;
 }
 
 .btn-soft:hover {
@@ -37,14 +40,15 @@ font-family: 'DM Sans', sans-serif;
     background-color: rgb(255, 160, 0);
     filter: none;
     opacity: 1;
-    border-radius: 30px;
+    border-radius: 10px;
     box-shadow: rgb(0,0,0 / 5%) 0px 4px 8px 0px;
-    height: 10%;
-    width: 20%;
     text-align: center;
-    margin-bottom: 32px;
-    font-weight: bolder;
-font-family: 'DM Sans', sans-serif;
+    height: 50px;
+    margin: 10px;
+    width: 180px;
+    font-family: 'DM Sans', sans-serif;
+    color: rgb(228, 228, 228);
+    font-size: 36px;
 
   }
 
@@ -58,7 +62,8 @@ text-decoration: none;
 display: flex;
 justify-content: center;
 flex-direction: column;
-color: black;
+color: rgb(228, 228, 228);
+
 
 }
 
@@ -83,7 +88,44 @@ color: black;
     box-shadow: rgb(0,0,0 / 5%) 0px 4px 8px 0px;
     height: 40px;
     margin: 10px;
-    width: 200px;
-font-weight: bolder;
-font-family: 'DM Sans', sans-serif;
+    width: 180px;
+    font-weight: bolder;
+    font-family: 'DM Sans', sans-serif;
+    color: rgb(228, 228, 228);
+  }
+
+  .btn-nav{
+    background-color: rgb(255, 160, 0);
+    filter: none;
+    opacity: 1;
+    border-radius: 10px;
+    box-shadow: rgb(0,0,0 / 5%) 0px 4px 8px 0px;
+    text-align: center;
+    height: 50px;
+    margin: 10px;
+    width: 180px;
+    font-family: 'DM Sans', sans-serif;
+    color: rgb(228, 228, 228);
+  }
+
+  .btn-nav:hover{
+    color: #607D8B;
+  }
+
+  .btn-card{
+    background-color: rgb(255, 160, 0);
+    filter: none;
+    opacity: 1;
+    text-align: center;
+    height: 48px;
+    width: 180px;
+    font-family: 'DM Sans', sans-serif;
+    margin: 0ch;
+    color: rgb(228, 228, 228);
+    font-size: 24px;
+    text-decoration: none;
+  }
+  .btn-card:hover{
+    color: #607D8B;
+    text-decoration: none;
   }
