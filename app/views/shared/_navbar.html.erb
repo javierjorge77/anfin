@@ -1,6 +1,6 @@
-<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="/">
+<div class="navbar navbar-expand-sm navbar-light navbar-lewagon" style="height: 60px;" >
+  <div class="container-fluid" style="height: 40px;" >
+    <a class="navbar-brand" href="/" style="height: 150px;" >
       <h1><span id="an">An</span><span id="fin">Fin</span></h1>
 </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -12,40 +12,40 @@
 
           <% unless user_signed_in? %>
 
-            <li class="nav-item active btn-nav">
+            <li class="nav-item">
               <h3><%= link_to "Contacto", new_contacto_path, class: "nav-link" %></h3>
             </li>
 
-            <li class="nav-item active btn-nav">
+            <li class="nav-item">
               <h3><%= link_to "Registrarte", new_user_registration_path, class: "nav-link" %></h3>
             </li>
 
-            <li class="nav-item btn-nav">
+            <li class="nav-item">
               <h3><%= link_to "Entrar", new_user_session_path, class: "nav-link" %></h3>
             </li>
 
           <% else %>
             <% if current_user.admin %>
-              <li class="nav-item btn-nav">
+              <li class="nav-item">
               <h3><%= link_to "Admin", admin_root_path, class: "nav-link" %></h3>
               </li>
             <% end %>
 
 
-            <li class="nav-item btn-nav">
+            <li class="nav-item">
               <h3><%= link_to "Nuevo-Rut", new_consultation_path, class: "nav-link" %></h3>
             </li>
 
-            <li class="nav-item btn-nav">
+            <li class="nav-item">
               <h3><%= link_to "Consultas", consultations_path, class: "nav-link" %></h3>
             </li>
 
 
-            <li class="nav-item btn-nav">
+            <li class="nav-item">
               <h3><%= link_to "Perfil", edit_user_registration_path, class: "nav-link" %></h3>
             </li>
 
-            <li class="nav-item btn-nav">
+            <li class="nav-item">
               <h3> <%= link_to "Salir", destroy_user_session_path, data: {turbo_method: :delete}, class: "nav-link" %> </h3>
             </li>
           <% end %>

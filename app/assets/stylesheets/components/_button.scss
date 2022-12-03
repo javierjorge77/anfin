@@ -92,6 +92,7 @@ color: rgb(228, 228, 228);
     font-weight: bolder;
     font-family: 'DM Sans', sans-serif;
     color: rgb(228, 228, 228);
+    text-decoration: none;
   }
 
   .btn-nav{
@@ -106,6 +107,7 @@ color: rgb(228, 228, 228);
     width: 180px;
     font-family: 'DM Sans', sans-serif;
     color: rgb(228, 228, 228);
+    text-decoration: none;
   }
 
   .btn-nav:hover{
@@ -124,8 +126,19 @@ color: rgb(228, 228, 228);
     color: rgb(228, 228, 228);
     font-size: 24px;
     text-decoration: none;
+    padding-top: 6px;
   }
   .btn-card:hover{
     color: #607D8B;
     text-decoration: none;
+  }
+
+  .btn-card a{
+    text-decoration: none;
+    color: #2b373c;
+  }
+
+  .btn-card a:hover{
+    text-decoration: none;
+    color: aliceblue;
   }
