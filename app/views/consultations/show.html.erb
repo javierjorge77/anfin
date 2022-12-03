@@ -4,28 +4,33 @@
   </div>
 
 
-  <div class="container">
-  <% civil= 'https://res.cloudinary.com/dp693fkkc/image/upload/v1668897253/AnFin/civil_ksy2rq.jpg' %>
+  <div class="container" style="margin-left: 10px;">
+  <% civil=  %>
   <% laboral= 'https://res.cloudinary.com/dp693fkkc/image/upload/v1668897236/AnFin/laboral_vzaujd.jpg'%>
   <% cobranza = 'https://res.cloudinary.com/dp693fkkc/image/upload/v1668897245/AnFin/cobranza_sfnsnn.jpg '%>
 
   <% @demandas.each do |demanda| %>
     <div class="card-product">
       <% if demanda.tipo.upcase == 'CIVIL'  %>
-        <img src="<%=civil %>" />
+        <h1>Civil</h1>
       <% elsif demanda.tipo.upcase == 'LABORAL'  %>
-        <img src="<%=laboral %>" />
+        <h1>Laboral</h1>
       <% elsif demanda.tipo.upcase == 'COBRANZA'  %>
-        <img src="<%=cobranza %>" />
+        <h1>Cobranza</h1>
       <% end %>
 
     <div class="card-product-infos">
-        <h3> <%= demanda.tipo.capitalize %> </h3>
-        <h6> <%= demanda.estado %></h6>
+        <h3>Tipo: <%= demanda.tipo.capitalize %> </h3>
+        <h3>Rol: <%= demanda.rol %> </h6>
+        <h6>Tribunal: <%=  demanda.tribunal %></h6>
+        <h6>Estado: <%= demanda.estado %></h6>
+
+    </div>
+    <div class="card-product-infos">
         <h6> <%= demanda.proc %></h6>
         <h6> <%= demanda.etapa %></h6>
-        <h6> <%=  demanda.tribunal %></h6>
         <h6> <%=  demanda.fechaingreso %></h6>
+        <h6> <%=  demanda.link %></h6>
     </div>
 
     </div>
