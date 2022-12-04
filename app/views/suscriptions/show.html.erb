@@ -1,0 +1,15 @@
+<div class="container py-3">
+      <ul>
+      <h3><%= @suscription.name %></h3>
+
+      <li>Some awesome description of our amazing suscription</li>
+      <li>Amount: <%= humanized_money_with_symbol(@suscription.price) %> USD</li>
+
+      <%= form_with url: orders_path do %>
+      <%= hidden_field_tag 'suscription_id', @suscription.id %>
+      <%= submit_tag 'Pagar', class: 'btn btn-primary' %>
+      <% end %>
+      </ul>
+
+
+</div>

@@ -1,7 +1,9 @@
 
-<div class="container" style="width:300px;" >
+<div class="container" style="width:300px;" id="new_consultation_form">
   <%= simple_form_for(@consultation,url: consultations_path, method: :post) do |f| %>
     <%= f.input :rut %>
+    <%= f.hint 'Poner en Formato: 12345678-9' %>
+
 
 
       <div class="btn-nuevorut">

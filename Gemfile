@@ -9,6 +9,9 @@ gem "faraday"
 gem "pundit"
 gem 'activeadmin', github: 'activeadmin/activeadmin'
 gem 'inherited_resources', github: 'activeadmin/inherited_resources'
+gem 'money-rails'
+gem 'stripe'
+gem 'stripe_event'
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.4"
