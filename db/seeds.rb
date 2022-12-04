@@ -1,15 +1,15 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
-#   Character.create(name: "Luke", movie: movies.first)
 
-user1= User.create(id: 1, email: "javierjorge77@gmail.com", password: "123456", username: "JJPO")
 
-consulta1 = Consultation.create(rut: "12470886-9", nombre: "Juan Camaney", user_id: 1, created_at: Date.today, updated_at: Date.today )
+puts 'Creating Users...'
+user1= User.create(id: 1, email: "javierjorge77@gmail.com", password: "123456", username: "JJPO", admin: true)
+user2= User.create(id: 2, email: "jptoro@anfin.cl", password: "123456", username: "Juan pedro", admin: true)
 
+
+
+puts 'Consulta'
+consulta1 = Consultation.create(rut: "12470886-9", nombre: "MICHELE ANTOINE SAINT-JEAN BUSTOS", user_id: 1, created_at: Date.today, updated_at: Date.today )
+
+puts 'Demandas'
 
 demanda1= Demanda.create!(tipo: "civil",
   estado: "Tramitación ",
@@ -55,3 +55,10 @@ demanda3= Demanda.create!(tipo: "cobranza",
 
 )
 
+puts 'Creating Suscriptions'
+
+event= Suscription.create!( sku: "1", name: "Pago por Evento", price: 5)
+monthly= Suscription.create!( sku: "2", name: "Pago Mensual", price: 20)
+yearly= Suscription.create!( sku: "2", name: "Pago Anual", price: 200)
+
+puts 'Finished!'

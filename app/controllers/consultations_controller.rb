@@ -40,8 +40,9 @@ class ConsultationsController < ApplicationController
 
     response = conn.get("/api/v1/integration/helper/judicial/#{consultation_params[:rut]}")
     data = JSON.parse(response.body)
+
     if data["success"]
-      @consultation = Consultation.create(rut: "#{data["data"]["rut"]}", nombre: "pruebaq 1", user: current_user)
+      @consultation = Consultation.create(rut: "#{data["data"]["rut"]}", nombre: "", user: current_user)
         data["data"]["civil"].each do |civil|
         @demanda = Demanda.create(
             consultation: @consultation,
@@ -119,9 +120,17 @@ class ConsultationsController < ApplicationController
             persona: "#{litigante["persona:"]}"
           )
         end
+
       end
    end
 
+   @litigantes= Litigante.all
+   @dueño = @litigantes.select do |litigante|
+     litigante.rut == consultation_params[:rut]
+   end
+   @edit= Consultation.last
+   @edit.nombre= @dueño.last.nombre
+   @edit.save
     redirect_to consultations_path
 
 end

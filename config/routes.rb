@@ -10,5 +10,12 @@ Rails.application.routes.draw do
 
   resources :consultations, only:[:new,:create, :index, :show]
   resources :contactos, only:[:new, :create]
+  resources :suscriptions, only: [:index, :show]
+
+  resources :orders, only: [:show, :create] do
+    resources :payments, only: :new
+  end
+
+  mount StripeEvent::Engine, at: '/stripe-webhooks'
 
 end

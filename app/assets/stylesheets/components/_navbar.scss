@@ -19,7 +19,9 @@
   }
 
 .nav-link:hover{
-  color:  #607D8B;
+  // color:  #607D8B;
+  color: $gold;
+
   font-family: 'DM Sans', sans-serif;
   }
 
@@ -30,7 +32,8 @@
   }
 
   .navbar-brand #an{
-    color: #607D8B;
+    // color: #607D8B;
+    color: $gold;
     font-family: 'DM Sans', sans-serif;
     font-weight: bolder;
     font-size: 64px;

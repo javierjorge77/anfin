@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_11_27_000050) do
+ActiveRecord::Schema[7.0].define(version: 2022_12_03_235916) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -74,6 +74,27 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_27_000050) do
     t.index ["demanda_id"], name: "index_litigantes_on_demanda_id"
   end
 
+  create_table "orders", force: :cascade do |t|
+    t.string "state"
+    t.string "suscription_sku"
+    t.string "price_cents"
+    t.string "checkout_session_id"
+    t.bigint "user_id", null: false
+    t.bigint "suscription_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["suscription_id"], name: "index_orders_on_suscription_id"
+    t.index ["user_id"], name: "index_orders_on_user_id"
+  end
+
+  create_table "suscriptions", force: :cascade do |t|
+    t.string "sku"
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "price_cents", default: 0, null: false
+  end
+
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
@@ -93,4 +114,6 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_27_000050) do
   add_foreign_key "consultations", "users"
   add_foreign_key "demandas", "consultations"
   add_foreign_key "litigantes", "demandas"
+  add_foreign_key "orders", "suscriptions"
+  add_foreign_key "orders", "users"
 end
