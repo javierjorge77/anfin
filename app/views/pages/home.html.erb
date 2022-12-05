@@ -4,15 +4,19 @@
 
           <div data-controller="scroll-reveal" style="margin-top: 220px">
             <h1 data-scroll-reveal-target="item" class="reveal" style="font-family: 'DM Sans', sans-serif;">Análisis Legal en <strong>un click</strong></h1>
-            <h3 data-scroll-reveal-target="item" class="reveal" data-delay="250ms" style="font-family: 'DM Sans', sans-serif;">Te entregamos el background check <strong>mas completo</strong> del mercado, dandote una poderosa herramienta para evitar riesgos laborales, <strong>explicado</strong> de manera <span>sencilla</span></h3>
+            <h3 data-scroll-reveal-target="item" class="reveal" data-delay="250ms" style="font-family: 'DM Sans', sans-serif;">Te entregamos el background check <strong>mas completo</strong> del mercado, dandote una poderosa herramienta para evitar riesgos laborales, <strong>explicado</strong> de manera <span>sencilla</span> usando la informacion displonible en distintos sitios web de transparencia en el sistema judicial, la cual es de  <strong>utiludad publica.</strong></h3>
           </div>
 
 
-        <div class="buttons">
+        <div class="buttons" >
           <% unless user_signed_in? %>
           <%= link_to "Registrate", new_user_registration_path, class: "btn-alert" %>
+          <%= link_to "Contactanos", new_contacto_path, class: "btn-contacto" %>
           <% end %>
+          <% if user_signed_in? %>
           <%= link_to "Haz una consulta", new_consultation_path, class: "btn-soft" %>
+          <% end %>
+
 
 
         </div>
