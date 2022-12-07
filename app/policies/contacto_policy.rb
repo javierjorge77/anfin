@@ -1,6 +1,5 @@
 class ConsultationPolicy < ApplicationPolicy
 
-  end
 
   def create?
     return true
@@ -15,4 +14,5 @@ class ConsultationPolicy < ApplicationPolicy
     def resolve
       scope.all
     end
+  end
 end

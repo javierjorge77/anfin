@@ -33,18 +33,20 @@
                 input_html: { autocomplete: "current-password" } %>
   </div>
 
-<div class="buttons">
-  <div class="buttons btn-alert">
+<div >
+  <div >
     <span id="links">
-    <%= f.button :submit, "Update" %>
+      <%= f.button :submit, "Update",class: "btn-log" %>
     </span>
   </div>
-<% end %>
-
-<%= link_to "Back to home", "/", class: "btn-soft" %>
-
+  <% end %>
+  <div>
+    <span id="links" style="margin-top: 12px;margin-bottom: 20px;">
+  <%= link_to "Back to home", "/", class: "btn btn-log" %>
+    </span>
+  </div>
 </div>
-<h6><%= link_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %></h4>
+
 
 
 </div>
