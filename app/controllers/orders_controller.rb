@@ -21,10 +21,12 @@ class OrdersController < ApplicationController
     cancel_url: order_url(order)
 
   )
+  order.update(checkout_session_id: session.id)
+  redirect_to new_order_payment_path(order)
+
   authorize suscription
   authorize order
-  # redirect_to new_order_payment_path(order)
-  redirect_to session.url, allow_other_host: true
+
 
   end
 
