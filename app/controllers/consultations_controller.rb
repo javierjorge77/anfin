@@ -50,7 +50,7 @@ class ConsultationsController < ApplicationController
             estado: "#{civil["estado"]}",
             estadoCausa: "#{civil["estadoCausa"]}",
             etapa: "#{civil["etapa"]}",
-            fechaingreso:  "#{civil["fechaingreso"]}",
+            fechaingreso:  "#{civil["fechaIngreso"]}",
             link: "#{civil["link"]}",
             linkPdf:  "#{civil["linkPdf"]}",
             LinkEbook:"#{civil["linkEbook"]}",

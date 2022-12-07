@@ -85,10 +85,9 @@ color: rgb(228, 228, 228);
     filter: none;
     opacity: 1;
     border-radius: 10px;
-    box-shadow: rgb(0,0,0 / 5%) 0px 4px 8px 0px;
     height: 40px;
     margin: 10px;
-    width: 180px;
+    width: 250px;
     font-weight: bolder;
     font-family: 'DM Sans', sans-serif;
     color: rgb(228, 228, 228);
@@ -142,3 +141,42 @@ color: rgb(228, 228, 228);
     text-decoration: none;
     color: aliceblue;
   }
+
+  .btn-contacto{
+    background-color: #607D8B;
+    filter: none;
+    opacity: 1;
+    border-radius: 10px;
+    box-shadow: rgb(0,0,0 / 5%) 0px 4px 8px 0px;
+    height: 44px;
+    margin: 10px;
+    width: 220px;
+    font-weight: bolder;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 24px;
+    text-decoration: none;
+  }
+
+  .btn-contacto:hover {
+    opacity: 0.5;
+    }
+
+    .btn-link{
+      background-color:  rgb(255, 160, 0);
+      filter: none;
+      opacity: 1;
+      border-radius: 10px;
+      height: 44px;
+      margin: 10px;
+      width: 220px;
+      font-weight: bolder;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 24px;
+      text-decoration: none;
+      color: black;
+    }
+    .btn-link:hover{
+      background-color: rgb(255, 160, 0);
+      text-decoration: none;
+      color:aliceblue;
+    }
