@@ -38,7 +38,7 @@ class ConsultationsController < ApplicationController
         Authorization: ENV["KEY"]}
     )
 
-    response = conn.get("/api/v1/integration/helper/judicial/#{consultation_params[:rut]}")
+    response = conn.get("https://prod.api.thesheriff.cl/api/v1/integration/helper/judicial/#{consultation_params[:rut]}")
     data = JSON.parse(response.body)
 
     if data["success"]
