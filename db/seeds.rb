@@ -56,7 +56,13 @@ demanda3= Demanda.create!(tipo: "cobranza",
   rol: "C-17908-2019",
   tribunal: "6º Juzgado Civil de Santiago",
   consultation_id: 1,
+)
 
+demanda1.litigantes.create(
+      rut: "83187800-2",
+      nombre: " SOCIEDAD CAR S.A. ",
+      sujeto: "DTE.  ",
+      persona: "J"
 )
 
 puts 'Creating Suscriptions'
