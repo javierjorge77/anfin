@@ -12,10 +12,6 @@
 
           <% unless user_signed_in? %>
 
-            <li class="nav-item active ">
-              <h3><%= link_to "Contacto", new_contacto_path, class: "nav-link" %></h3>
-            </li>
-
             <li class="nav-item active">
 
               <h3><%= link_to "Registrarte", new_user_registration_path, class: "nav-link" %></h3>

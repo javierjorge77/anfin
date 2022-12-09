@@ -35,10 +35,10 @@ class ConsultationsController < ApplicationController
     conn = Faraday.new(
       url: 'https://api.sheriffqa.keiron.cl',
       headers: {   accept: "aplication/json",
-        Authorization: ENV["KEY"]}
+        Authorization: KEY}
     )
 
-    response = conn.get("/api/v1/integration/helper/judicial/#{consultation_params[:rut]}")
+    response = conn.get ("https://prod.api.thesheriff.cl/api/v1/integration/helper/judicial/#{consultation_params[:rut]}")
     data = JSON.parse(response.body)
 
     if data["success"]
@@ -50,7 +50,7 @@ class ConsultationsController < ApplicationController
             estado: "#{civil["estado"]}",
             estadoCausa: "#{civil["estadoCausa"]}",
             etapa: "#{civil["etapa"]}",
-            fechaingreso:  "#{civil["fechaingreso"]}",
+            fechaingreso:  "#{civil["fechaIngreso"]}",
             link: "#{civil["link"]}",
             linkPdf:  "#{civil["linkPdf"]}",
             LinkEbook:"#{civil["linkEbook"]}",

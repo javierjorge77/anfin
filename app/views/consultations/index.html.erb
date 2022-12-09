@@ -5,21 +5,45 @@
   </div>
 
   <div class="show-consultas">
-    <h2>Consultas:  </h2>
+    <h2 style="font-size: 36px;padding-top:10px;padding-bottom: 5px;">Consultas:</h2>
 
         <% @consultations.each do | consultation|  %>
 
             <% civil_num = consultation.demandas.count { |element| element.tipo.match("civil") } %>
             <% laboral_num = consultation.demandas.count { |element| element.tipo.match("laboral") } %>
             <% cobranza_num = consultation.demandas.count { |element| element.tipo.match("cobranza") } %>
-
             <div class="card-trip">
-              <div class="card-trip-infos">
-                  <h2>  <%= consultation.nombre %>  </h2>
-                  <h2> <%= consultation.rut %></h2>
-                  <h2>Laboral: <%= laboral_num %></h2>
-                  <h2>Civil: <%= civil_num %></h2>
-                  <h2>Cobranza: <%= cobranza_num %></h2>
+              <div class="card-trip-infos" style="padding-top: 5px!">
+                  <h2 class="w-25" style="font-size: 24px;padding-top: 0px;padding-left: 20px">  <%= consultation.nombre.capitalize %>  </h2>
+                  <h2 style="font-size: 24px;padding-top: 0px;"> <%= consultation.rut %></h2>
+                  <% if laboral_num > 1 && laboral_num <2 %>
+                    <h2 style="font-size: 24px;padding-top:5px">Laboral:</h2><h2 style="font-size: 24px;padding-top: 5px; color: #fbc02d"> <%= laboral_num %></h2>
+                  <% end %>
+                  <% if laboral_num > 2 %>
+                    <h2 style="font-size: 24px;padding-top:5px">Laboral:</h2><h2 style="font-size: 24px;padding-top: 5px; color: #b71c1c"> <%= laboral_num %></h2>
+                  <% end %>
+                  <% if laboral_num < 1 %>
+                    <h2 style="font-size: 24px;padding-top: 5px">Laboral:</h2><h2 style="font-size: 24px;padding-top: 5px; color: #388e3c"> <%= laboral_num %></h2>
+                  <% end %>
+                  <% if civil_num == 3 && civil_num <4 %>
+                    <h2 style="font-size: 24px;padding-top: 5px">civil:</h2><h2 style="font-size: 24px;padding-top: 5px; color: #fbc02d"> <%= civil_num %></h2>
+                  <% end %>
+                  <% if civil_num > 4 %>
+                    <h2 style="font-size: 24px;padding-top: 5px">civil:</h2><h2 style="font-size: 24px;padding-top: 5px; color: #b71c1c"> <%= civil_num %></h2>
+                  <% end %>
+                  <% if civil_num <= 2 %>
+                    <h2 style="font-size: 24px;padding-top: 5px">civil:</h2><h2 style="font-size: 24px;padding-top: 5px; color: #388e3c"> <%= civil_num %></h2>
+                  <% end %>
+                  <% if cobranza_num == 3 && cobranza_num <4 %>
+                    <h2 style="font-size: 24px;padding-top: 5px">cobranza:</h2><h2 style="font-size: 24px;padding-top: 5px; color: #fbc02d"> <%= cobranza_num %></h2>
+                  <% end %>
+                  <% if cobranza_num > 4 %>
+                    <h2 style="font-size: 24px;padding-top: 5px">cobranza:</h2><h2 style="font-size: 24px;padding-top: 5px; color: #b71c1c"> <%= cobranza_num %></h2>
+                  <% end %>
+                  <% if cobranza_num <= 2 %>
+                    <h2 style="font-size: 24px;padding-top: 5px">cobranza:</h2><h2 style="font-size: 24px;padding-top: 5px; color: #388e3c"> <%= cobranza_num %></h2>
+                  <% end %>
+
                 <div class="btn-card" >
                   <%= link_to "Revisar", consultation_path(consultation) %>
                 </div>
