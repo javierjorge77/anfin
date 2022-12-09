@@ -1,4 +1,8 @@
 
+Litigante.destroy_all
+Demanda.destroy_all
+Consultation.destroy_all
+User.destroy_all
 
 puts 'Creating Users...'
 user1= User.create(id: 1, email: "javierjorge77@gmail.com", password: "123456", username: "JJPO", admin: true)

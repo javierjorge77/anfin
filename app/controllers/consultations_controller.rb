@@ -129,8 +129,9 @@ class ConsultationsController < ApplicationController
      litigante.rut == consultation_params[:rut]
    end
    @edit= Consultation.last
-   if @edit.nombre.empty?
+   if @dueño.empty?
     @edit.nombre = "Sin Demandas"
+    @edit.save
     redirect_to consultations_path
    else
     @edit.nombre= @dueño.last.nombre
