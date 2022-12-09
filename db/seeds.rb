@@ -1,4 +1,8 @@
 
+Litigante.destroy_all
+Demanda.destroy_all
+Consultation.destroy_all
+User.destroy_all
 
 puts 'Creating Users...'
 user1= User.create(id: 1, email: "javierjorge77@gmail.com", password: "123456", username: "JJPO", admin: true)
@@ -52,7 +56,13 @@ demanda3= Demanda.create!(tipo: "cobranza",
   rol: "C-17908-2019",
   tribunal: "6º Juzgado Civil de Santiago",
   consultation_id: 1,
+)
 
+demanda1.litigantes.create(
+      rut: "83187800-2",
+      nombre: " SOCIEDAD CAR S.A. ",
+      sujeto: "DTE.  ",
+      persona: "J"
 )
 
 puts 'Creating Suscriptions'
