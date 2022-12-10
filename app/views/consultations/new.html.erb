@@ -6,9 +6,8 @@
     <%= simple_form_for(@consultation,url: consultations_path, method: :post) do |f| %>
           <h3><%= f.input :rut%></h3>
           <h3> <%= f.hint 'Poner en Formato: 12345678-9' %></h3>
-          <div class="buttons">
-          <h2> <%= f.button :submit, "Buscar", class: "btn-soft"%></h2>
-
+          <div>
+          <h2> <%= f.button :submit, "Buscar", class: "btn-log"%></h2>
           </div>
        <% end %>
 
