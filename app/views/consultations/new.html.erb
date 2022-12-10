@@ -1,15 +1,15 @@
 
-<div class="container" style="width:300px;" id="new_consultation_form">
-  <%= simple_form_for(@consultation,url: consultations_path, method: :post) do |f| %>
-    <%= f.input :rut %>
-    <%= f.hint 'Poner en Formato: 12345678-9' %>
 
+<div class="container devise-form">
+<h2>Consular un RUT: </h2>
 
+    <%= simple_form_for(@consultation,url: consultations_path, method: :post) do |f| %>
+          <h3><%= f.input :rut%></h3>
+          <h3> <%= f.hint 'Poner en Formato: 12345678-9' %></h3>
+          <div class="buttons">
+          <h2> <%= f.button :submit, "Buscar", class: "btn-soft"%></h2>
 
-      <div>
-        <%= f.button :submit, class: "btn-nuevorut" %>
-      </div>
+          </div>
+       <% end %>
 
-
-  <% end %>
 </div>

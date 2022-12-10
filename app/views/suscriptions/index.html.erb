@@ -1,5 +1,6 @@
 <div class="container">
   <h1>Membresías</h1>
+
   <div class="row">
     <% @suscriptions.each do |suscription| %>
       <div class="col-6 col-md-4">
@@ -8,11 +9,15 @@
           <div class="card-body">
             <h5 class="card-title"><%= suscription.name %></h5>
             <p> <%= humanized_money_with_symbol(suscription.price) %> USD</p>
-
-            <%= link_to "Ver", suscription_path(suscription), class: "btn btn-primary" %>
-
-
           </div>
+        <div>
+          <%= form_with url: orders_path do %>
+          <%= hidden_field_tag 'suscription_id', suscription.id %>
+          <%= submit_tag 'Pagar', class: 'btn btn-primary' %>
+          <% end %>
+
+
+        </div>
         </div>
       </div>
     <% end %>
