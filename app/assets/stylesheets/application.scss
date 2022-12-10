@@ -18,8 +18,20 @@
 
 #display {
   display:flex;
+  height: 100%;
 }
 
-#new_consultation_form {
-height: 400px;
+
+html,
+body {
+  margin: 0px;
+  padding: px;
+  height: 100%;
+
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

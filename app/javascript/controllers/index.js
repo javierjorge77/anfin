@@ -19,3 +19,7 @@ import ScrollReveal from 'stimulus-scroll-reveal'
 
 const application2 = Application.start()
 application2.register('scroll-reveal', ScrollReveal)
+
+
+import VisibilityController from "./visibility_controller"
+application.register("visibility", VisibilityController)

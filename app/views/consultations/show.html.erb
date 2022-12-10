@@ -3,14 +3,20 @@
     <%= render "shared/vertical" %>
   </div>
 
+  <div class="container" style="margin-left: 5px; ">
 
-  <div class="container" style="margin-left: 10px;">
+
   <% civil=  %>
   <% laboral= 'https://res.cloudinary.com/dp693fkkc/image/upload/v1668897236/AnFin/laboral_vzaujd.jpg'%>
   <% cobranza = 'https://res.cloudinary.com/dp693fkkc/image/upload/v1668897245/AnFin/cobranza_sfnsnn.jpg '%>
 
+
+
   <% @demandas.each do |demanda| %>
+
     <div class="card-product">
+
+    <div class="card-product-infos" style="width: 400px;">
       <% if demanda.tipo.upcase == 'CIVIL'  %>
         <h1>Civil</h1>
       <% elsif demanda.tipo.upcase == 'LABORAL'  %>
@@ -18,6 +24,7 @@
       <% elsif demanda.tipo.upcase == 'COBRANZA'  %>
         <h1>Cobranza</h1>
       <% end %>
+    </div>
 
     <div class="card-product-infos" style="width: 600px;">
       <h6><strong>Procedimiento:</strong> <%= demanda.proc %></h6>
@@ -25,7 +32,10 @@
       <h6><strong>Estado:</strong> <%= demanda.estado %></h6>
 
     </div>
-    <div class="card-product-infos" style="width: 600px;">
+
+
+    <div class="card-product-infos" style="width: 400px;">
+
       <h6><strong>Rol:</strong> <%= demanda.rol %> </h6>
       <h6><strong>Etapa: </strong><%= demanda.etapa %></h6>
       <h6><strong>Fecha ingreso: </strong><%=  demanda.fechaingreso.to_date %></h6>
@@ -33,33 +43,39 @@
     </div>
 
 
+    <div id="options" data-controller="visibility">
+
+      <div class="card-product-infos" style="width: 400px;" >
+        <h3 data-visibility-target="hideable" hidden >Litigantes:</h3>
+        <% demanda.litigantes.each do |litigante| %>
+        <h6 data-visibility-target="hideable" hidden > <%= "#{litigante.nombre.upcase} -- #{ litigante.sujeto}"%> </h6>
+        <% end %>
+      </div>
 
 
-    <div class="card-product-infos">
-    <a class="btn-link" href="<%=  demanda.link %>" style="width: 220px;font-weight: bolder;font-family: 'DM Sans', sans-serif;font-size: 24px;text-decoration: none;padding-left: 50px;padding-right: 50px;margin-left: 0px;"> link</a>
+      <div class="card-product-infos">
+        <button data-action="visibility#toggleTargets"> <i class="fa-sharp fa-solid fa-eye"></i></button>
+        <a class="btn-link" href="<%=  demanda.link %>" style="width: 220px;font-weight: bolder;font-family: 'DM Sans', sans-serif;font-size: 24px;text-decoration: none;padding-left: 50px;padding-right: 50px;margin-left: 0px;"> link</a>
+      </div>
+
     </div>
+
+
+
+
     </div>
+
+
+
+
+
+
+
+
+
   <% end %>
 
-    <br>
-
-      <div class="buttons">
-      <%= link_to "Back", consultations_path, class: "buttons btn-alert" %>
-      </div>
 
   </div>
 
 </div>
-
-
-  <%# estado: "Tramitación ",
-  estadoCausa: "Sin archivar",
-  etapa: "1 Verificación de créditos",
-  fechaingreso: "2017-07-21T00:00:00.000Z",
-  link: "https://civil.pjud.cl/CIVILPORWEB/ConsultaDetalleAtPublicoAccion.do?TIP_Consulta=1&TIP_Cuaderno=86&CRR_IdCuaderno=24183771&ROL_Causa=10745&TIP_Causa=C&ERA_Causa=2017&CRR_IdCausa=19299794&COD_Tribunal=390&TIP_Informe=1&",
-  linkPdf: "",
-  LinkEbook: nil,
-  proc: "Concursal de Liquidación Voluntaria - Empresa Deudora",
-  rol: "C-10745-2017",
-  tribunal: "4º Juzgado Civil de San Miguel",
-  consultation_id: 1, %>
