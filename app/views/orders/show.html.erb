@@ -1,14 +1,16 @@
 <div class="container">
   <div class="row py-4">
     <div class="col">
-      <h1>Orden #<%= @order.id %> <small><span class="badge badge-primary"><strong> <%= @order.state %></span> </strong></small></h1>
+      <h1>Orden #<%= @order.id %> <small><span class="badge badge-primary"><strong> Confirmada</span> </strong></small></h1>
       <ul class="list-unstyled">
-        <li><strong>Fecha creación:</strong> <%= @order.created_at.to_date %></li>
-        <li><strong>Tipo de Suscripción: </strong> <%= @order.suscription.name %> [<%= @order.suscription_sku %>]</li>
-        <li><strong>TOTAL: </strong> <%= humanized_money_with_symbol @order.price_cents %></li>
-        </li>
+
+
+        <h3> <li><strong> Fecha creación:</strong> <%= @order.created_at.to_date %></li></h3>
+        <h3><li><strong> Tipo de Suscripción: </strong> <%= @order.suscription.name %> [<%= @order.suscription_sku %>]</li> </h3>
+        <h3><li><strong> TOTAL: </strong> <%= humanized_money_with_symbol @order.price_cents %></li></h3>
+
       </ul>
-      <p>Estimated delivery in <strong>2 business days</strong></p>
+      <p> Ya puedes disfrutar de Afin </p>
     </div>
   </div>
 </div>

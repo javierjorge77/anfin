@@ -10,6 +10,8 @@ end
 def show
   @suscription = Suscription.find(params[:id])
   authorize @suscription
+
+
 end
 
 end
