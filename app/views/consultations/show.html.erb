@@ -26,19 +26,22 @@
       <% end %>
     </div>
 
-    <div class="card-product-infos" style="width: 400px;">
+    <div class="card-product-infos" style="width: 600px;">
       <h6><strong>Procedimiento:</strong> <%= demanda.proc %></h6>
       <h6><strong>Tribunal:</strong> <%=  demanda.tribunal %></h6>
       <h6><strong>Estado:</strong> <%= demanda.estado %></h6>
 
     </div>
 
+
     <div class="card-product-infos" style="width: 400px;">
+
       <h6><strong>Rol:</strong> <%= demanda.rol %> </h6>
       <h6><strong>Etapa: </strong><%= demanda.etapa %></h6>
       <h6><strong>Fecha ingreso: </strong><%=  demanda.fechaingreso.to_date %></h6>
 
     </div>
+
 
     <div id="options" data-controller="visibility">
 
@@ -61,6 +64,7 @@
 
 
     </div>
+
 
 
 
