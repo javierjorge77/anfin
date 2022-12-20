@@ -70,18 +70,18 @@ class ConsultationsController < ApplicationController
         end
 
           data["data"]["laboral"].each do |laboral|
-            demanda = Demanda.create(
+            @demanda = Demanda.create(
               consultation: @consultation,
               tipo: "laboral",
               estado: "#{laboral["estado"]}",
               estadoCausa: "#{laboral["estadoCausa"]}",
               etapa: "#{laboral["etapa"]}",
-              fechaingreso:  "#{laboral["fechaingreso"]}",
+              fechaingreso:  "#{laboral["fechaIngreso"]}",
               link: "#{laboral["link"]}",
               linkPdf:  "#{laboral["linkPdf"]}",
               LinkEbook:"#{laboral["linkEbook"]}",
-              proc: "#{laboral["proc"]}",
-              rol: "#{laboral["rol"]}",
+              proc: "#{laboral["materia"]}",
+              rol: "#{laboral["rit"]}",
               tribunal: "#{laboral["tribunal"]}"
           )
             laboral["litigantes"].each do |litigante|
@@ -96,18 +96,18 @@ class ConsultationsController < ApplicationController
         end
 
         data["data"]["cobranza"].each do |cobranza|
-          demanda = Demanda.create(
+          @demanda = Demanda.create(
             consultation: @consultation,
             tipo: "cobranza",
             estado: "#{cobranza["estado"]}",
             estadoCausa: "#{cobranza["estadoCausa"]}",
             etapa: "#{cobranza["etapa"]}",
-            fechaingreso:  "#{cobranza["fechaingreso"]}",
+            fechaingreso:  "#{cobranza["fechaIngreso"]}",
             link: "#{cobranza["link"]}",
             linkPdf:  "#{cobranza["linkPdf"]}",
             LinkEbook:"#{cobranza["linkEbook"]}",
             proc: "#{cobranza["proc"]}",
-            rol: "#{cobranza["rol"]}",
+            rol: "#{cobranza["rit"]}",
             tribunal: "#{cobranza["tribunal"]}"
 
         )

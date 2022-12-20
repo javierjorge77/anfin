@@ -1,0 +1,904 @@
+ {"success":true,
+  "data":
+  {"rut":"15127605-9",
+   "civil":[
+    {"estado":"Concluido ",
+    "estadoCausa":"Sin archivar",
+    "etapa":"11 Terminada ",
+    "fechaIngreso":"2017-05-17T00:00:00.000Z",
+    "link":"https://civil.pjud.cl/CIVILPORWEB/ConsultaDetalleAtPublicoAccion.do?TIP_Consulta=1&TIP_Cuaderno=1&CRR_IdCuaderno=23659498&ROL_Causa=1226&TIP_Causa=C&ERA_Causa=2017&CRR_IdCausa=18874197&COD_Tribunal=129&TIP_Informe=1&",
+    "linkPdf":nil,
+    "linkEbook":"",
+    "litigantes":[{"rut":"15127605-9",
+    "nombre":"HÉCTOR FRANCISCO MORA RETAMAL",
+    "sujeto":"DDO.  ",
+    "persona":"N"},
+    {"rut":"14019689-4",
+    "nombre":"JOSÉ ANTONIO VARGAS GUANGUA",
+    "sujeto":"AB.DTE",
+    "persona":"N"}],
+    "proc":"Ejecutivo Obligación de Dar",
+    "rol":"C-1226-2017",
+    "tribunal":"1º Juzgado de Letras de Curicó"
+  },
+    {"estado":"Archivada Digital ",
+    "estadoCausa":"Archivada",
+    "etapa":"0 Preparación vía ejecutiva ",
+    "fechaIngreso":"2016-07-18T00:00:00.000Z",
+    "link":"https://civil.pjud.cl/CIVILPORWEB/ConsultaDetalleAtPublicoAccion.do?TIP_Consulta=1&TIP_Cuaderno=49&CRR_IdCuaderno=21357569&ROL_Causa=1750&TIP_Causa=C&ERA_Causa=2016&CRR_IdCausa=17004413&COD_Tribunal=130&TIP_Informe=1&",
+    "linkPdf":"",
+    "linkEbook":nil,
+    "litigantes":[{"rut":"15127605-9",
+    "nombre":"Héctor Francisco MORA RETAMAL",
+    "sujeto":"DTE.  ",
+    "persona":"N"},
+    {"rut":"15129279-8",
+    "nombre":"NELSON ENRIQUE DIAZ GALVEZ",
+    "sujeto":"AB.DTE",
+    "persona":"N"},
+    {"rut":"14596471-7",
+    "nombre":"Luzmira Ximena GODOY MONARES",
+    "sujeto":"DDO.  ",
+    "persona":"N"}],
+    "proc":"Gestión Prep. recon de firma y conf de deuda",
+    "rol":"C-1750-2016",
+    "tribunal":"2º Juzgado de Letras de Curicó"
+  },
+    {"estado":"Arch. Judic.",
+    "estadoCausa":"Archivada",
+    "etapa":"15 Terminada ",
+    "fechaIngreso":"2012-03-13T00:00:00.000Z",
+    "link":"https://civil.pjud.cl/CIVILPORWEB/ConsultaDetalleAtPublicoAccion.do?TIP_Consulta=1&TIP_Cuaderno=49&CRR_IdCuaderno=10484619&ROL_Causa=4939&TIP_Causa=C&ERA_Causa=2012&CRR_IdCausa=8534650&COD_Tribunal=284&TIP_Informe=1&",
+    "linkPdf":nil,
+    "linkEbook":"",
+    "litigantes":[{"rut":"96522900-0",
+    "nombre":" CREDITOS ORGANIZACION Y FINANZ AS S.A.",
+    "sujeto":"DTE.  ",
+    "persona":"J"},
+    {"rut":"6669374-0",
+    "nombre":"JORGE ALEJANDRO FIGUEROA GONZÁLEZ",
+    "sujeto":"AB.DTE",
+    "persona":"N"},
+    {"rut":"15127605-9",
+    "nombre":"HÉCTOR FRANCISCO MORA RETAMAL",
+    "sujeto":"DDO.  ",
+    "persona":"N"}],
+    "proc":"Gestión Preparatoria (Citac.Conf.Deuda)",
+    "rol":"C-4939-2012",
+    "tribunal":"26º Juzgado Civil de Santiago"
+  },
+    {"estado":"Archivada Digital ",
+    "estadoCausa":"Archivada",
+    "etapa":"11 Terminada ",
+    "fechaIngreso":"2017-03-30T00:00:00.000Z",
+    "link":"https://civil.pjud.cl/CIVILPORWEB/ConsultaDetalleAtPublicoAccion.do?TIP_Consulta=1&TIP_Cuaderno=1&CRR_IdCuaderno=23336450&ROL_Causa=866&TIP_Causa=C&ERA_Causa=2017&CRR_IdCausa=18616408&COD_Tribunal=129&TIP_Informe=1&",
+    "linkPdf":nil,
+    "linkEbook":"",
+    "litigantes":[{"rut":"15127605-9",
+    "nombre":"HÉCTOR FRANCISCO MORA RETAMAL",
+    "sujeto":"DDO.  ",
+    "persona":"N"},
+    {"rut":"14019689-4",
+    "nombre":"JOSÉ ANTONIO VARGAS GUANGUA",
+    "sujeto":"AB.DTE",
+    "persona":"N"}],
+    "proc":"Ejecutivo Obligación de Dar",
+    "rol":"C-866-2017",
+    "tribunal":"1º Juzgado de Letras de Curicó"
+    },
+    {"estado":"Archivada Digital ",
+    "estadoCausa":"Archivada",
+    "etapa":"1 Notificación demanda y su proveído",
+    "fechaIngreso":"2017-03-30T00:00:00.000Z",
+    "link":"https://civil.pjud.cl/CIVILPORWEB/ConsultaDetalleAtPublicoAccion.do?TIP_Consulta=1&TIP_Cuaderno=1&CRR_IdCuaderno=23336581&ROL_Causa=867&TIP_Causa=C&ERA_Causa=2017&CRR_IdCausa=18616539&COD_Tribunal=129&TIP_Informe=1&",
+    "linkPdf":nil,
+    "linkEbook":"",
+    "litigantes":[{"rut":"15127605-9",
+    "nombre":"HÉCTOR FRANCISCO MORA RETAMAL",
+    "sujeto":"DDO.  ",
+    "persona":"N"
+    },
+    {"rut":"12114706-8",
+    "nombre":"SOLANGE SOLEDAD LECAROS GONZÁLEZ",
+    "sujeto":"AB.DTE",
+    "persona":"N"
+  }],
+    "proc":"Ejecutivo Obligación de Dar",
+    "rol":"C-867-2017",
+    "tribunal":"1º Juzgado de Letras de Curicó"
+    },
+    {"estado":"Tramitación ",
+    "estadoCausa":"Archivada",
+    "etapa":"1 Notificación demanda y su proveído",
+    "fechaIngreso":"2017-09-12T00:00:00.000Z",
+    "link":"https://civil.pjud.cl/CIVILPORWEB/ConsultaDetalleAtPublicoAccion.do?TIP_Consulta=1&TIP_Cuaderno=1&CRR_IdCuaderno=24618143&ROL_Causa=893&TIP_Causa=C&ERA_Causa=2017&CRR_IdCausa=19643806&COD_Tribunal=133&TIP_Informe=1&",
+    "linkPdf":nil,
+    "linkEbook":"",
+    "litigantes":[{"rut":"15127605-9",
+    "nombre":"HÉCTOR FRANCISCO MORA RETAMAL",
+    "sujeto":"DDO.  ",
+    "persona":"N"
+    },
+    {"rut":"77352960-4",
+    "nombre":"industrial y comercial sto chile  ",
+    "sujeto":"DTE.  ",
+    "persona":"J"
+    },
+    {"rut":"12467279-1",
+    "nombre":"ENZO LEONARDO COPPA HURTADO",
+    "sujeto":"AB.DTE",
+    "persona":"N"
+  }],
+    "proc":"Ordinario Menor Cuantía",
+    "rol":"C-893-2017",
+    "tribunal":"Juzgado de Letras de Molina"
+    },
+    {"estado":"Concluido ",
+    "estadoCausa":"Sin archivar",
+    "etapa":"1 Terminada ",
+    "fechaIngreso":"2017-05-16T00:00:00.000Z",
+    "link":"https://civil.pjud.cl/CIVILPORWEB/ConsultaDetalleAtPublicoAccion.do?TIP_Consulta=1&TIP_Cuaderno=1&CRR_IdCuaderno=23644482&ROL_Causa=178&TIP_Causa=E&ERA_Causa=2017&CRR_IdCausa=18862692&COD_Tribunal=133&TIP_Informe=1&",
+    "linkPdf":nil,
+    "linkEbook":"",
+    "litigantes":[{"rut":"15127605-9",
+    "nombre":"HÉCTOR FRANCISCO MORA RETAMAL",
+    "sujeto":"DDO.  ",
+    "persona":"N"
+    },
+    {"rut":"12114706-8",
+    "nombre":"SOLANGE SOLEDAD LECAROS GONZÁLEZ",
+    "sujeto":"AB.DTE",
+    "persona":"N"
+  }],
+    "proc":"Exhorto",
+    "rol":"E-178-2017",
+    "tribunal":"Juzgado de Letras de Molina"
+    },
+    {"estado":"Concluido ",
+    "estadoCausa":"Sin archivar",
+    "etapa":"1 Terminada ",
+    "fechaIngreso":"2017-06-02T00:00:00.000Z",
+    "link":"https://civil.pjud.cl/CIVILPORWEB/ConsultaDetalleAtPublicoAccion.do?TIP_Consulta=1&TIP_Cuaderno=1&CRR_IdCuaderno=23772851&ROL_Causa=211&TIP_Causa=E&ERA_Causa=2017&CRR_IdCausa=18961770&COD_Tribunal=133&TIP_Informe=1&",
+    "linkPdf":nil,
+    "linkEbook":"",
+    "litigantes":[{"rut":"15127605-9",
+    "nombre":"HÉCTOR FRANCISCO MORA RETAMAL",
+    "sujeto":"DDO.  ",
+    "persona":"N"
+    },
+    {"rut":"14019689-4",
+    "nombre":"JOSÉ ANTONIO VARGAS GUANGUA",
+    "sujeto":"AB.DTE",
+    "persona":"N"
+  }],
+    "proc":"Exhorto",
+    "rol":"E-211-2017",
+    "tribunal":"Juzgado de Letras de Molina"
+    },
+    {"estado":"Tramitación ",
+    "estadoCausa":"Sin archivar",
+    "etapa":"0 Exhorto ",
+    "fechaIngreso":"2022-06-30T00:00:00.000Z",
+    "link":"https://civil.pjud.cl/CIVILPORWEB/ConsultaDetalleAtPublicoAccion.do?TIP_Consulta=1&TIP_Cuaderno=1&CRR_IdCuaderno=35974203&ROL_Causa=367&TIP_Causa=E&ERA_Causa=2022&CRR_IdCausa=28241057&COD_Tribunal=133&TIP_Informe=1&",
+    "linkPdf":nil,
+    "linkEbook":"",
+    "litigantes":[{"rut":"15127605-9",
+    "nombre":"HÉCTOR FRANCISCO MORA RETAMAL",
+    "sujeto":"DDO.  ",
+    "persona":"N"
+    },
+    {"rut":"14019689-4",
+    "nombre":"JOSÉ ANTONIO VARGAS GUANGUA",
+    "sujeto":"AB.DTE",
+    "persona":"N"
+  }],
+    "proc":"Exhorto",
+    "rol":"E-367-2022",
+    "tribunal":"Juzgado de Letras de Molina"
+  }],
+    "cobranza":
+    [
+      {"estado":"Concluido",
+    "estadoCausa":"Archivada",
+    "etapa":"Terminada",
+    "fechaIngreso":"2018-09-03T03:00:00.000Z",
+    "link":"https://cobranza.pjud.cl/SITCOPORWEB/ConsultaDetalleAtPublicoAccion.do?TIP_Consulta=1&ROL_Causa=217&TIP_Causa=P&ERA_Causa=2018&CRR_IdCausa=3432340&COD_Tribunal=133&",
+    "linkPdf":nil,
+    "linkEbook":nil,
+    "monto":"C//DTD HTML 401 Transitional//EN\">",
+    "linkMonto":"https://cobranza.pjud.cl/SITCOPORWEB/ConsultaDetalleAtPublicoAccion.do?TIP_Consulta=1&ROL_Causa=217&TIP_Causa=P&ERA_Causa=2018&CRR_IdCausa=3432340&COD_Tribunal=133&&FLG_Liquidacion=1&TIP_Cuaderno=1&CRR_Cuaderno=6473351&FLG_NuevaLiquidacion=1",
+    "litigantes":[{"rut":"98001200-K",
+    "nombre":"Administradora de Fondos de Pensiones Planvital  ",
+    "sujeto":"DTE.  ",
+    "persona":"J"
+    },
+    {"rut":"15127605-9",
+    "nombre":"HECTOR FRANCISCO MORA RETAMAL",
+    "sujeto":"DDO.  ",
+    "persona":"N"
+    },
+    {"rut":"2415267-7",
+    "nombre":"Manuel Jesús Figueroa Saavedra",
+    "sujeto":"AB.DTE",
+    "persona":"N"
+    },
+    {"rut":"8270154-0",
+    "nombre":"Antonio Ricardo Alamos Avendano",
+    "sujeto":"AB.DTE",
+    "persona":"N"
+  }],
+    "proc":"Ejecutivo Previsional",
+    "rit":"P-217-2018",
+    "tribunal":"Juzgado de Letras de Molina"
+    },
+    {"estado":"Tramitación",
+    "estadoCausa":"Sin archivar",
+    "etapa":"Embargo",
+    "fechaIngreso":"2017-08-11T00:00:00.000Z",
+    "link":"https://cobranza.pjud.cl/SITCOPORWEB/ConsultaDetalleAtPublicoAccion.do?TIP_Consulta=1&ROL_Causa=72&TIP_Causa=C&ERA_Causa=2017&CRR_IdCausa=2983241&COD_Tribunal=1340&",
+    "linkPdf":nil,
+    "linkEbook":nil,
+    "monto":"",
+    "linkMonto":"https://cobranza.pjud.clhttps://cobranza.pjud.cl/SITCOPORWEB/ConsultaDetalleAtPublicoAccion.do?TIP_Consulta=1&ROL_Causa=72&TIP_Causa=C&ERA_Causa=2017&CRR_IdCausa=2983241&COD_Tribunal=1340&&FLG_Liquidacion=1&TIP_Cuaderno=1&CRR_Cuaderno=5621508&FLG_NuevaLiquidacion=1",
+    "litigantes":[{"rut":"15631095-6",
+    "nombre":"CRISTIAN RODRIGO VALENZUELA GALLEGOS",
+    "sujeto":"DTE.  ",
+    "persona":"N"
+    },
+    {"rut":"15127605-9",
+    "nombre":"HÉCTOR FRANCISCO MORA RETAMAL",
+    "sujeto":"DDO.  ",
+    "persona":"N"
+    },
+    {"rut":"14440138-7",
+    "nombre":"ANA MARÍA MORALES VALENZUELA",
+    "sujeto":"AB.DTE",
+    "persona":"N"
+  }],
+    "proc":"Cumplimiento Laboral",
+    "rit":"C-72-2017",
+    "tribunal":"Jdo. de Letras del Trabajo de Curicó"
+  }],
+    "laboral":[{"estado":"Concluido",
+    "estadoCausa":"Archivada",
+    "etapa":"Terminada",
+    "fechaIngreso":"2017-05-26T04:00:00.000Z",
+    "link":nil,
+    "linkPdf":"",
+    "linkEbook":"https://oficinajudicialvirtual.pjud.cl/ADIR_871/laboral/documentos/newebooklaboral.php?dtaEbook=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvb2ZpY2luYWp1ZGljaWFsdmlydHVhbC5wanVkLmNsIiwiYXVkIjoiaHR0cHM6XC9cL29maWNpbmFqdWRpY2lhbHZpcnR1YWwucGp1ZC5jbCIsImlhdCI6MTY1MTc1MzQxOSwiZXhwIjoxNjUxNzU3MDE5LCJkYXRhIjp7ImNycl9jYXVzYSI6IjU2MDY2NCIsImNvZF90cmlidW5hbCI6IjEzMyJ9fQ.UWcFyNEp3MiLiQrBwF3n85uQJqd0kjhx5zZCvPuIiH0",
+    "litigantes":[{"rut":"11233473-4",
+    "nombre":"ERIKA INÉS QUEZADA AGUILERA",
+    "sujeto":"DDO.SU",
+    "persona":"NATURAL",
+    "abogadoDefensor":"No"
+    },
+    {"rut":"9113017-3",
+    "nombre":"SONIA DEL CARMEN VERGARA PONCE",
+    "sujeto":"DDO.SU",
+    "persona":"NATURAL",
+    "abogadoDefensor":"No"
+    },
+    {"rut":"5373470-7",
+    "nombre":"MARÍA MARINA MUÑOZ DÍAZ",
+    "sujeto":"DDO.SU",
+    "persona":"NATURAL",
+    "abogadoDefensor":"No"
+    },
+    {"rut":"14054190-7",
+    "nombre":"PAMELA BEATRIZ VILCHES BECERRA",
+    "sujeto":"DNCTE.",
+    "persona":"NATURAL",
+    "abogadoDefensor":"No"
+    },
+    {"rut":"15127605-9",
+    "nombre":"HÉCTOR FRANCISCO MORA RETAMAL",
+    "sujeto":"DNCDO.",
+    "persona":"NATURAL",
+    "abogadoDefensor":"No"
+    },
+    {"rut":"10549717-2",
+    "nombre":"MAURICIO JAVIER CORRAL GALLARDO",
+    "sujeto":"AB.DNC",
+    "persona":"NATURAL",
+    "abogadoDefensor":"No"
+    },
+    {"rut":"61819000-5",
+    "nombre":"SERVICIO DE VIVIENDA Y URBANISMO SERVIU SEPTIMA REGION",
+    "sujeto":"DDO.SO",
+    "persona":"JURIDICA",
+    "abogadoDefensor":"No"
+    },
+    {"rut":"69100100-8",
+    "nombre":"I. MUNICIPALIDAD DE CURICO",
+    "sujeto":"DDO.SU",
+    "persona":"JURIDICA",
+    "abogadoDefensor":"No"
+    },
+    {"rut":"15151935-0",
+    "nombre":"PABLO EDGARDO DIAZ COFRE",
+    "sujeto":"AB.DNC",
+    "persona":"NATURAL",
+    "abogadoDefensor":"No"
+    },
+    {"rut":"10587105-8",
+    "nombre":"JUAN HERMAN BARRERA CORREA",
+    "sujeto":"AB.DNC",
+    "persona":"NATURAL",
+    "abogadoDefensor":"No"
+    },
+    {"rut":"8537681-0",
+    "nombre":"HECTOR MARCELO GARCIA SEPULVEDA",
+    "sujeto":"AB.DNC",
+    "persona":"NATURAL",
+    "abogadoDefensor":"No"
+    }
+     {"rut":"0-0"
+     "nombre":"PEDRO FIGUEROA SEPULVEDA"
+     "sujeto":"AB.DNC"
+     "persona":"NATURAL"
+     "abogadoDefensor":"No"
+    }]
+     "materia":"Exhorto"
+     "rit":"E-14-2017"
+     "tribunal":"Juzgado de Letras de Molina"
+     }
+     {"estado":"Concluido",
+     "estadoCausa":"Archivada",
+     "etapa":"Terminada",
+     "fechaIngreso":"2017-06-15T04:00:00.000Z",
+     "link":nil,
+     "linkPdf":"",
+     "linkEbook":"https://oficinajudicialvirtual.pjud.cl/ADIR_871/laboral/documentos/newebooklaboral.php?dtaEbook=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvb2ZpY2luYWp1ZGljaWFsdmlydHVhbC5wanVkLmNsIiwiYXVkIjoiaHR0cHM6XC9cL29maWNpbmFqdWRpY2lhbHZpcnR1YWwucGp1ZC5jbCIsImlhdCI6MTY1MTc2MTg4NiwiZXhwIjoxNjUxNzY1NDg2LCJkYXRhIjp7ImNycl9jYXVzYSI6IjU2NzEwNiIsImNvZF90cmlidW5hbCI6IjEzMyJ9fQ._AeUmIjFim36w1ApSrspe0hl2X3CIK1BEMFgr7IThNU"
+     ,"litigantes":[{"rut":"15631095-6",
+     "nombre":"CRISTIAN RODRIGO VALENZUELA GALLEGOS",
+     "sujeto":"DTE.",
+     "persona":"NATURAL",
+     "abogadoDefensor":"No"
+     },
+     {"rut":"15127605-9",
+     "nombre":"HÉCTOR FRANCISCO MORA RETAMAL",
+     "sujeto":"DDO.",
+     "persona":"NATURAL",
+     "abogadoDefensor":"No"
+     },
+     {"rut":"14440138-7",
+     "nombre":"ANA MARÍA MORALES VALENZUELA",
+     "sujeto":"AB.DTE",
+     "persona":"NATURAL",
+     "abogadoDefensor":"No"
+    },]
+     "materia":"Exhorto"
+     "rit":"E-16-2017"
+     "tribunal":"Juzgado de Letras de Molina"
+     }
+     {"estado":"Concluido"
+     "estadoCausa":"Archivada"
+     "etapa":"Terminada"
+     "fechaIngreso":"2017-06-28T04:00:00.000Z"
+     "link":nil
+     "linkPdf":""
+     "linkEbook":"https://oficinajudicialvirtual.pjud.cl/ADIR_871/laboral/documentos/newebooklaboral.php?dtaEbook=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvb2ZpY2luYWp1ZGljaWFsdmlydHVhbC5wanVkLmNsIiwiYXVkIjoiaHR0cHM6XC9cL29maWNpbmFqdWRpY2lhbHZpcnR1YWwucGp1ZC5jbCIsImlhdCI6MTY1MTc2NzAzNCwiZXhwIjoxNjUxNzcwNjM0LCJkYXRhIjp7ImNycl9jYXVzYSI6IjU3MDMyMCIsImNvZF90cmlidW5hbCI6IjEzMyJ9fQ.dB-090skk_-eDWg6kqo9CZ2fs6VLuu3fjhFMq2fUdU4"
+     "litigantes":[{"rut":"11233473-4"
+     "nombre":"ERIKA INÉS QUEZADA AGUILERA"
+     "sujeto":"DDO.SU"
+     "persona":"NATURAL"
+     "abogadoDefensor":"No"
+     }
+     {"rut":"9113017-3"
+     "nombre":"SONIA DEL CARMEN VERGARA PONCE"
+     "sujeto":"DDO.SU"
+     "persona":"NATURAL"
+     "abogadoDefensor":"No"
+     }
+     {"rut":"5373470-7"
+     "nombre":"MARÍA MARINA MUÑOZ DÍAZ"
+     "sujeto":"DDO.SU"
+     "persona":"NATURAL"
+     "abogadoDefensor":"No"
+     }
+     {"rut":"14054190-7"
+     "nombre":"PAMELA BEATRIZ VILCHES BECERRA"
+     "sujeto":"DNCTE."
+     "persona":"NATURAL"
+     "abogadoDefensor":"No"
+     }
+     {"rut":"15127605-9"
+     "nombre":"HÉCTOR FRANCISCO MORA RETAMAL"
+     "sujeto":"DNCDO."
+     "persona":"NATURAL"
+     "abogadoDefensor":"No"
+     }
+     {"rut":"10549717-2"
+     "nombre":"MAURICIO JAVIER CORRAL GALLARDO"
+     "sujeto":"AB.DNC"
+     "persona":"NATURAL"
+     "abogadoDefensor":"No"
+     }
+     {"rut":"61819000-5"
+     "nombre":"SERVICIO DE VIVIENDA Y URBANISMO SERVIU SEPTIMA REGION"
+     "sujeto":"DDO.SO"
+     "persona":"JURIDICA"
+     "abogadoDefensor":"No"
+     }
+     {"rut":"69100100-8"
+     "nombre":"I. MUNICIPALIDAD DE CURICO"
+     "sujeto":"DDO.SU"
+     "persona":"JURIDICA"
+     "abogadoDefensor":"No"
+     }
+     {"rut":"15151935-0"
+     "nombre":"PABLO EDGARDO DIAZ COFRE"
+     "sujeto":"AB.DNC"
+     "persona":"NATURAL"
+     "abogadoDefensor":"No"
+     }
+     {"rut":"10587105-8"
+     "nombre":"JUAN HERMAN BARRERA CORREA"
+     "sujeto":"AB.DNC"
+     "persona":"NATURAL"
+     "abogadoDefensor":"No"
+     }
+     {"rut":"8537681-0"
+     "nombre":"HECTOR MARCELO GARCIA SEPULVEDA"
+     "sujeto":"AB.DNC"
+     "persona":"NATURAL"
+     "abogadoDefensor":"No"
+     }
+     {"rut":"0-0"
+     "nombre":"PEDRO FIGUEROA SEPULVEDA"
+     "sujeto":"AB.DNC"
+     "persona":"NATURAL"
+     "abogadoDefensor":"No"
+    }]
+     "materia":"Exhorto"
+     "rit":"E-18-2017"
+     "tribunal":"Juzgado de Letras de Molina"
+     }
+     {"estado":"Concluido"
+     "estadoCausa":"Archivada"
+     "etapa":"Terminada"
+     "fechaIngreso":"2017-07-18T04:00:00.000Z"
+     "link":nil
+     "linkPdf":""
+     "linkEbook":"https://oficinajudicialvirtual.pjud.cl/ADIR_871/laboral/documentos/newebooklaboral.php?dtaEbook=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvb2ZpY2luYWp1ZGljaWFsdmlydHVhbC5wanVkLmNsIiwiYXVkIjoiaHR0cHM6XC9cL29maWNpbmFqdWRpY2lhbHZpcnR1YWwucGp1ZC5jbCIsImlhdCI6MTY1MTc3NTQzNiwiZXhwIjoxNjUxNzc5MDM2LCJkYXRhIjp7ImNycl9jYXVzYSI6IjU3NjE5MyIsImNvZF90cmlidW5hbCI6IjEzMyJ9fQ.CZW1BChj37aevSywrscbhIaoNP_rLACViZoS_0DvCJg"
+     "litigantes":[{"rut":"11233473-4"
+     "nombre":"ERIKA INÉS QUEZADA AGUILERA"
+     "sujeto":"DDO.SU"
+     "persona":"NATURAL"
+     "abogadoDefensor":"No"
+     }
+     {"rut":"9113017-3"
+     "nombre":"SONIA DEL CARMEN VERGARA PONCE"
+     "sujeto":"DDO.SU"
+     "persona":"NATURAL"
+     "abogadoDefensor":"No"
+     }
+     {"rut":"5373470-7"
+     "nombre":"MARÍA MARINA MUÑOZ DÍAZ"
+     "sujeto":"DDO.SU"
+     "persona":"NATURAL"
+     "abogadoDefensor":"No"
+     }
+     {"rut":"14054190-7"
+     "nombre":"PAMELA BEATRIZ VILCHES BECERRA"
+     "sujeto":"DNCTE."
+     "persona":"NATURAL"
+     "abogadoDefensor":"No"
+     }
+     {"rut":"15127605-9"
+     "nombre":"HÉCTOR FRANCISCO MORA RETAMAL"
+     "sujeto":"DNCDO."
+     "persona":"NATURAL"
+     "abogadoDefensor":"No"
+     }
+     {"rut":"10549717-2"
+     "nombre":"MAURICIO JAVIER CORRAL GALLARDO"
+     "sujeto":"AB.DNC"
+     "persona":"NATURAL"
+     "abogadoDefensor":"No"
+     }
+     {"rut":"61819000-5"
+     "nombre":"SERVICIO DE VIVIENDA Y URBANISMO SERVIU SEPTIMA REGION"
+     "sujeto":"DDO.SO"
+     "persona":"JURIDICA"
+     "abogadoDefensor":"No"
+     }
+     {"rut":"69100100-8"
+     "nombre":"I. MUNICIPALIDAD DE CURICO"
+     "sujeto":"DDO.SU"
+     "persona":"JURIDICA"
+     "abogadoDefensor":"No"
+     }
+     {"rut":"15151935-0"
+     "nombre":"PABLO EDGARDO DIAZ COFRE"
+     "sujeto":"AB.DNC"
+     "persona":"NATURAL"
+     "abogadoDefensor":"No"
+     }
+     {"rut":"10587105-8"
+     "nombre":"JUAN HERMAN BARRERA CORREA"
+     "sujeto":"AB.DNC"
+     "persona":"NATURAL"
+     "abogadoDefensor":"No"
+     }
+     {"rut":"8537681-0"
+     "nombre":"HECTOR MARCELO GARCIA SEPULVEDA"
+     "sujeto":"AB.DNC"
+     "persona":"NATURAL"
+     "abogadoDefensor":"No"
+     }
+     {"rut":"0-0"
+     "nombre":"PEDRO FIGUEROA SEPULVEDA"
+     "sujeto":"AB.DNC"
+     "persona":"NATURAL"
+     "abogadoDefensor":"No"
+    }]
+     "materia":"Exhorto"
+     "rit":"E-20-2017"
+     "tribunal":"Juzgado de Letras de Molina"
+     }
+     {"estado":"Concluido"
+     "estadoCausa":"Archivada"
+     "etapa":"Terminada"
+     "fechaIngreso":"2017-03-21T03:00:00.000Z"
+     "link":nil
+     "linkPdf":""
+     "linkEbook":"https://oficinajudicialvirtual.pjud.cl/ADIR_871/laboral/documentos/newebooklaboral.php?dtaEbook=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvb2ZpY2luYWp1ZGljaWFsdmlydHVhbC5wanVkLmNsIiwiYXVkIjoiaHR0cHM6XC9cL29maWNpbmFqdWRpY2lhbHZpcnR1YWwucGp1ZC5jbCIsImlhdCI6MTY1MTcxODI4OCwiZXhwIjoxNjUxNzIxODg4LCJkYXRhIjp7ImNycl9jYXVzYSI6IjU0MjU2MyIsImNvZF90cmlidW5hbCI6IjEzMyJ9fQ.65DshrWgAYm_cFMGkkpH3I5_Shj7nICyFQOq1dXd4O4"
+     "litigantes":[{"rut":"11233473-4"
+     "nombre":"ERIKA INÉS QUEZADA AGUILERA"
+     "sujeto":"DDO.SU"
+     "persona":"NATURAL"
+     "abogadoDefensor":"No"
+     }
+     {"rut":"9113017-3"
+     "nombre":"SONIA DEL CARMEN VERGARA PONCE"
+     "sujeto":"DDO.SU"
+     "persona":"NATURAL"
+     "abogadoDefensor":"No"
+     }
+     {"rut":"5373470-7"
+     "nombre":"MARÍA MARINA MUÑOZ DÍAZ"
+     "sujeto":"DDO.SU"
+     "persona":"NATURAL"
+     "abogadoDefensor":"No"
+     }
+     {"rut":"14054190-7"
+     "nombre":"PAMELA BEATRIZ VILCHES BECERRA"
+     "sujeto":"DNCTE."
+     "persona":"NATURAL"
+     "abogadoDefensor":"No"
+     }
+     {"rut":"15127605-9"
+     "nombre":"HÉCTOR FRANCISCO MORA RETAMAL"
+     "sujeto":"DNCDO."
+     "persona":"NATURAL"
+     "abogadoDefensor":"No"
+     }
+     {"rut":"10549717-2"
+     "nombre":"MAURICIO JAVIER CORRAL GALLARDO"
+     "sujeto":"AB.DNC"
+     "persona":"NATURAL"
+     "abogadoDefensor":"No"
+     }
+     {"rut":"61819000-5"
+     "nombre":"SERVICIO DE VIVIENDA Y URBANISMO SERVIU SEPTIMA REGION"
+     "sujeto":"DDO.SO"
+     "persona":"JURIDICA"
+     "abogadoDefensor":"No"
+     }
+     {"rut":"69100100-8"
+     "nombre":"I. MUNICIPALIDAD DE CURICO"
+     "sujeto":"DDO.SU"
+     "persona":"JURIDICA"
+     "abogadoDefensor":"No"
+    }]
+     "materia":"Exhorto"
+     "rit":"E-7-2017"
+     "tribunal":"Juzgado de Letras de Molina"
+     }
+     {"estado":"Concluido"
+     "estadoCausa":"Archivada"
+     "etapa":"Terminada"
+     "fechaIngreso":"2017-04-12T03:00:00.000Z"
+     "link":nil
+     "linkPdf":""
+     "linkEbook":"https://oficinajudicialvirtual.pjud.cl/ADIR_871/laboral/documentos/newebooklaboral.php?dtaEbook=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvb2ZpY2luYWp1ZGljaWFsdmlydHVhbC5wanVkLmNsIiwiYXVkIjoiaHR0cHM6XC9cL29maWNpbmFqdWRpY2lhbHZpcnR1YWwucGp1ZC5jbCIsImlhdCI6MTY1MTcyOTM2NCwiZXhwIjoxNjUxNzMyOTY0LCJkYXRhIjp7ImNycl9jYXVzYSI6IjU0ODc1NSIsImNvZF90cmlidW5hbCI6IjEzMyJ9fQ.dPQW02Blrv921niqI78X_6_rMrsqTSdBIWY0Me8zcRw"
+     "litigantes":[{"rut":"11233473-4"
+     "nombre":"ERIKA INÉS QUEZADA AGUILERA"
+     "sujeto":"DDO.SU"
+     "persona":"NATURAL"
+     "abogadoDefensor":"No"
+     }
+     {"rut":"9113017-3"
+     "nombre":"SONIA DEL CARMEN VERGARA PONCE"
+     "sujeto":"DDO.SU"
+     "persona":"NATURAL"
+     "abogadoDefensor":"No"
+     }
+     {"rut":"5373470-7"
+     "nombre":"MARÍA MARINA MUÑOZ DÍAZ"
+     "sujeto":"DDO.SU"
+     "persona":"NATURAL"
+     "abogadoDefensor":"No"
+     }
+     {"rut":"14054190-7"
+     "nombre":"PAMELA BEATRIZ VILCHES BECERRA"
+     "sujeto":"DNCTE."
+     "persona":"NATURAL"
+     "abogadoDefensor":"No"
+     }
+     {"rut":"15127605-9"
+     "nombre":"HÉCTOR FRANCISCO MORA RETAMAL"
+     "sujeto":"DNCDO."
+     "persona":"NATURAL"
+     "abogadoDefensor":"No"
+     }
+     {"rut":"10549717-2"
+     "nombre":"MAURICIO JAVIER CORRAL GALLARDO"
+     "sujeto":"AB.DNC"
+     "persona":"NATURAL"
+     "abogadoDefensor":"No"
+     }
+     {"rut":"61819000-5"
+     "nombre":"SERVICIO DE VIVIENDA Y URBANISMO SERVIU SEPTIMA REGION"
+     "sujeto":"DDO.SO"
+     "persona":"JURIDICA"
+     "abogadoDefensor":"No"
+     }
+     {"rut":"69100100-8"
+     "nombre":"I. MUNICIPALIDAD DE CURICO"
+     "sujeto":"DDO.SU"
+     "persona":"JURIDICA"
+     "abogadoDefensor":"No"
+     }
+     {"rut":"15151935-0"
+     "nombre":"PABLO EDGARDO DIAZ COFRE"
+     "sujeto":"AB.DNC"
+     "persona":"NATURAL"
+     "abogadoDefensor":"No"
+     }
+     {"rut":"10587105-8"
+     "nombre":"JUAN HERMAN BARRERA CORREA"
+     "sujeto":"AB.DNC"
+     "persona":"NATURAL"
+     "abogadoDefensor":"No"
+    }]
+     "materia":"Exhorto"
+     "rit":"E-9-2017"
+     "tribunal":"Juzgado de Letras de Molina"
+     }
+     {"estado":"Cumplimiento"
+     "estadoCausa":"Archivada"
+     "etapa":"Terminada"
+     "fechaIngreso":"2017-06-10T04:00:00.000Z"
+     "link":nil
+     "linkPdf":""
+     "linkEbook":"https://oficinajudicialvirtual.pjud.cl/ADIR_871/laboral/documentos/newebooklaboral.php?dtaEbook=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvb2ZpY2luYWp1ZGljaWFsdmlydHVhbC5wanVkLmNsIiwiYXVkIjoiaHR0cHM6XC9cL29maWNpbmFqdWRpY2lhbHZpcnR1YWwucGp1ZC5jbCIsImlhdCI6MTY1MTc1OTk2NSwiZXhwIjoxNjUxNzYzNTY1LCJkYXRhIjp7ImNycl9jYXVzYSI6IjU2NTY0MyIsImNvZF90cmlidW5hbCI6IjEzNDAifX0.nfAJuA9bpFjI-s4Dv2Kr1CrAbYoNpPLFKRneSHIF4kM"
+     "litigantes":[{"rut":"15631095-6"
+     "nombre":"CRISTIAN RODRIGO VALENZUELA GALLEGOS"
+     "sujeto":"DTE."
+     "persona":"NATURAL"
+     "abogadoDefensor":"No"
+     }
+     {"rut":"15127605-9"
+     "nombre":"HÉCTOR FRANCISCO MORA RETAMAL"
+     "sujeto":"DDO."
+     "persona":"NATURAL"
+     "abogadoDefensor":"No"
+     }
+     {"rut":"14440138-7"
+     "nombre":"ANA MARÍA MORALES VALENZUELA"
+     "sujeto":"AB.DTE"
+     "persona":"NATURAL"
+     "abogadoDefensor":"No"
+    }]
+     "materia":"Monitorio"
+     "rit":"M-124-2017"
+     "tribunal"=>"Juzgado de Letras del Trabajo de Curicó"
+     }
+     {"estado"=>"Concluido"
+     "estadoCausa"=>"Archivada"
+     "etapa"=>"Terminada"
+     "fechaIngreso"=>"2017-12-11T03:00:00.000Z"
+     "link"=>nil
+     "linkPdf"=>""
+     "linkEbook"=>"https://oficinajudicialvirtual.pjud.cl/ADIR_871/laboral/documentos/newebooklaboral.php?dtaEbook=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvb2ZpY2luYWp1ZGljaWFsdmlydHVhbC5wanVkLmNsIiwiYXVkIjoiaHR0cHM6XC9cL29maWNpbmFqdWRpY2lhbHZpcnR1YWwucGp1ZC5jbCIsImlhdCI6MTY1MTg2ODYxNywiZXhwIjoxNjUxODcyMjE3LCJkYXRhIjp7ImNycl9jYXVzYSI6IjYxODA2MCIsImNvZF90cmlidW5hbCI6IjEzMyJ9fQ.u7_V1Z4y6lrTEY6pvEAC5H9RRYtUDFEVSadjW71FE54"
+     "litigantes"=>[{"rut"=>"15631774-8"
+     "nombre"=>"DAVID ALONSO GREZ GUTIERREZ (Poder Amplio)"
+     "sujeto"=>"AB.DTE"
+     "persona"=>"NATURAL"
+     "abogadoDefensor"=>"No"
+     }
+     {"rut"=>"15129770-6"
+     "nombre"=>"GONZALO PATRICIO PINO MUÑOZ (Poder Amplio)"
+     "sujeto"=>"AB.DTE"
+     "persona"=>"NATURAL"
+     "abogadoDefensor"=>"No"
+     }
+     {"rut"=>"91041000-8"
+     "nombre"=>"VIÑA SAN PEDRO TARAPACA S.A."
+     "sujeto"=>"DDO.SO"
+     "persona"=>"JURIDICA"
+     "abogadoDefensor"=>"No"
+     }
+     {"rut"=>"89069300-8"
+     "nombre"=>"VINICOLA PATACON S.P.A"
+     "sujeto"=>"DDO.SO"
+     "persona"=>"JURIDICA"
+     "abogadoDefensor"=>"No"
+     }
+     {"rut"=>"77911520-8"
+     "nombre"=>"INVERSIONES Y SERVICIOS VITICOLAS 2003 SPA"
+     "sujeto"=>"DDO."
+     "persona"=>"JURIDICA"
+     "abogadoDefensor"=>"No"
+     }
+     {"rut"=>"15127605-9"
+     "nombre"=>"HÉCTOR FRANCISCO MORA RETAMAL"
+     "sujeto"=>"DTE."
+     "persona"=>"NATURAL"
+     "abogadoDefensor"=>"No"
+     }
+     {"rut"=>"8039568-K"
+     "nombre"=>"ANDRES RODRIGUEZ MORALES"
+     "sujeto"=>"AB.DDO"
+     "persona"=>"NATURAL"
+     "abogadoDefensor"=>"No"
+     }
+     {"rut"=>"15783413-4"
+     "nombre"=>"DIEGO ANDRES SALDAÑA MARTINEZ"
+     "sujeto"=>"AB.DDO"
+     "persona"=>"NATURAL"
+     "abogadoDefensor"=>"No"
+     }
+     {"rut"=>"8039568-K"
+     "nombre"=>"ANDRES RODRIGUEZ MORALES"
+     "sujeto"=>"AB.DDO"
+     "persona"=>"NATURAL"
+     "abogadoDefensor"=>"No"
+     }
+     {"rut"=>"15783413-4"
+     "nombre"=>"DIEGO ANDRES SALDAÑA MARTINEZ"
+     "sujeto"=>"AB.DDO"
+     "persona"=>"NATURAL"
+     "abogadoDefensor"=>"No"
+     }
+     {"rut"=>"15736394-8"
+     "nombre"=>"JAVIER HORMAZABAL COLLAO"
+     "sujeto"=>"AB.DDO"
+     "persona"=>"NATURAL"
+     "abogadoDefensor"=>"No"
+     }
+     {"rut"=>"4187704-9"
+     "nombre"=>"ALFREDO VALDES RODRIGUEZ"
+     "sujeto"=>"AB.DDO"
+     "persona"=>"NATURAL"
+     "abogadoDefensor"=>"No"
+     }
+     {"rut"=>"13959239-5"
+     "nombre"=>"DELIA ALEJANDRA RUIZ RODRIGUEZ"
+     "sujeto"=>"T.IND"
+     "persona"=>"NATURAL"
+     "abogadoDefensor"=>"No"
+     }
+     {"rut"=>"15736394-8"
+     "nombre"=>"JAVIER HORMAZABAL COLLAO"
+     "sujeto"=>"AB.DDO"
+     "persona"=>"NATURAL"
+     "abogadoDefensor"=>"No"
+     }
+     {"rut"=>"10031629-3"
+     "nombre"=>"RICARDO ESPINA VIO (Poder Amplio)"
+     "sujeto"=>"AB.DDO"
+     "persona"=>"NATURAL"
+     "abogadoDefensor"=>"No"
+     }
+     {"rut"=>"15822847-5"
+     "nombre"=>"CARLOS GUIDO ESPINOZA CERECEDA"
+     "sujeto"=>"AP.DDO"
+     "persona"=>"NATURAL"
+     "abogadoDefensor"=>"No"
+    }]
+     "materia"=>"Ordinario"
+     "rit"=>"O-71-2017"
+     "tribunal"=>"Juzgado de Letras de Molina"
+     }
+     {"estado"=>"Concluido"
+     "estadoCausa"=>"Archivada"
+     "etapa"=>"Terminada"
+     "fechaIngreso"=>"2017-02-28T03:00:00.000Z"
+     "link"=>nil
+     "linkPdf"=>""
+     "linkEbook"=>"https://oficinajudicialvirtual.pjud.cl/ADIR_871/laboral/documentos/newebooklaboral.php?dtaEbook=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvb2ZpY2luYWp1ZGljaWFsdmlydHVhbC5wanVkLmNsIiwiYXVkIjoiaHR0cHM6XC9cL29maWNpbmFqdWRpY2lhbHZpcnR1YWwucGp1ZC5jbCIsImlhdCI6MTY1MTcwNzkwNSwiZXhwIjoxNjUxNzExNTA1LCJkYXRhIjp7ImNycl9jYXVzYSI6IjUzNjc3NiIsImNvZF90cmlidW5hbCI6IjEzNDAifX0.GxWKL9Y6bWK_Ho-K4U0zItxz66gmXrQKatWpBhz9ww0"
+     "litigantes"=>[{"rut"=>"11233473-4"
+     "nombre"=>"ERIKA INÉS QUEZADA AGUILERA"
+     "sujeto"=>"DDO.SU"
+     "persona"=>"NATURAL"
+     "abogadoDefensor"=>"No"
+     }
+     {"rut"=>"9113017-3"
+     "nombre"=>"SONIA DEL CARMEN VERGARA PONCE"
+     "sujeto"=>"DDO.SU"
+     "persona"=>"NATURAL"
+     "abogadoDefensor"=>"No"
+     }
+     {"rut"=>"5373470-7"
+     "nombre"=>"MARÍA MARINA MUÑOZ DÍAZ"
+     "sujeto"=>"DDO.SU"
+     "persona"=>"NATURAL"
+     "abogadoDefensor"=>"No"
+     }
+     {"rut"=>"14054190-7"
+     "nombre"=>"PAMELA BEATRIZ VILCHES BECERRA"
+     "sujeto"=>"DNCTE."
+     "persona"=>"NATURAL"
+     "abogadoDefensor"=>"No"
+     }
+     {"rut"=>"15127605-9"
+     "nombre"=>"HÉCTOR FRANCISCO MORA RETAMAL"
+     "sujeto"=>"DNCDO."
+     "persona"=>"NATURAL"
+     "abogadoDefensor"=>"No"
+     }
+     {"rut"=>"10549717-2"
+     "nombre"=>"MAURICIO JAVIER CORRAL GALLARDO (Poder Amplio)"
+     "sujeto"=>"AB.DNC"
+     "persona"=>"NATURAL"
+     "abogadoDefensor"=>"No"
+     }
+     {"rut"=>"61819000-5"
+     "nombre"=>"SERVICIO DE VIVIENDA Y URBANISMO SERVIU SEPTIMA REGION"
+     "sujeto"=>"DDO.SO"
+     "persona"=>"JURIDICA"
+     "abogadoDefensor"=>"No"
+     }
+     {"rut"=>"69100100-8"
+     "nombre"=>"I. MUNICIPALIDAD DE CURICO"
+     "sujeto"=>"DDO.SU"
+     "persona"=>"JURIDICA"
+     "abogadoDefensor"=>"No"
+     }
+     {"rut"=>"15151935-0"
+     "nombre"=>"PABLO EDGARDO DIAZ COFRE (Poder Amplio)"
+     "sujeto"=>"AB.DNC"
+     "persona"=>"NATURAL"
+     "abogadoDefensor"=>"No"
+     }
+     {"rut"=>"10587105-8"
+     "nombre"=>"JUAN HERMAN BARRERA CORREA (Poder Amplio)"
+     "sujeto"=>"AB.DNC"
+     "persona"=>"NATURAL"
+     "abogadoDefensor"=>"No"
+     }
+     {"rut"=>"8537681-0"
+     "nombre"=>"HECTOR MARCELO GARCIA SEPULVEDA (Poder Amplio)"
+     "sujeto"=>"AB.DNC"
+     "persona"=>"NATURAL"
+     "abogadoDefensor"=>"No"
+     }
+     {"rut"=>"0-0"
+     "nombre"=>"PEDRO FIGUEROA SEPULVEDA (Poder Amplio)"
+     "sujeto"=>"AB.DNC"
+     "persona"=>"NATURAL"
+     "abogadoDefensor"=>"No"
+     }
+     {"rut"=>"15631774-8"
+     "nombre"=>"DAVID ALONSO GREZ GUTIERREZ (Poder Amplio)"
+     "sujeto"=>"AB.DNC"
+     "persona"=>"NATURAL"
+     "abogadoDefensor"=>"No"
+     }
+     {"rut"=>"15129770-6"
+     "nombre"=>"GONZALO PATRICIO PINO MUÑOZ (Poder Amplio)"
+     "sujeto"=>"AB.DNC"
+     "persona"=>"NATURAL"
+     "abogadoDefensor"=>"No"
+    }]
+     "materia"=>"Tutela"
+     "rit"=>"T-7-2017"
+     "tribunal"=>"Juzgado de Letras del Trabajo de Curicó"
+     }
+    ]
+
+    }
+    }
